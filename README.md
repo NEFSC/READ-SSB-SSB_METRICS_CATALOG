@@ -16,4 +16,3 @@ Additional resources:
 The **bookdown** book: https://bookdown.org/yihui/bookdown/
 
 The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
->>>>>>> 5ba56d0 (Initial commit)
