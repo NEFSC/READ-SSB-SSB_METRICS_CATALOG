@@ -1,0 +1,3 @@
+book_filename: "my-book"
+output_dir: "docs"
+delete_merged_file: true
