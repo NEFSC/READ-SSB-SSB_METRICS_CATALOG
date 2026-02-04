@@ -2,13 +2,46 @@ p.caption {
   color: #777;
   margin-top: 10px;
 }
+
 p code {
   white-space: inherit;
 }
+
 pre {
   word-break: normal;
   word-wrap: normal;
 }
+
 pre code {
   white-space: inherit;
+}
+
+/* --- New Logo Fixes --- */
+
+/* 1. Target the actual list container to remove global side padding */
+.book-summary ul.summary {
+    padding: 0 !important;
+}
+
+/* 2. Target the logo list item specifically */
+.book-summary ul.summary li.sidebar-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+/* 3. Force the image to ignore all constraints */
+.book-summary ul.summary li.sidebar-logo img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 !important;
+}
+
+/* 4. Fix padding for all other menu items so they don't hit the edges */
+/* (Since we removed padding from the whole list, we have to give it back to the text) */
+.book-summary ul.summary li:not(.sidebar-logo) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }

@@ -16,9 +16,9 @@ github-repo: rstudio/bookdown-demo
 
 # Overview 
 
- This site provides an overview of the metrics, and the methods and code used to generate them, produced by the Social Sciences Branch of the Northeast Fisheries Science Center. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works. 
+ This site provides an overview of the metrics, and the methods and code used to generate them, produced by the Social Sciences Branch of the Northeast Fisheries Science Center. The intent of this document is to increase access, transferability , and reproducibility of SSB-created works. 
  
- #Getting started
+# Getting started
  The first chapter "Metrics Index" Describes a full table of metrics, their level of stratification and time series as well as which product is associated with the metric. Once identifying the metric of interest, you can navigate to the appropriate chapter which describes the methods for creating the metric. 
  
 End users can also navigate directly to the product chapter of interest to gain insight on the suite of metrics offered by each indidviual product. 

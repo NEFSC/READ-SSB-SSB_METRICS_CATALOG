@@ -1,7 +1,7 @@
 book_filename: "SSB_METRICS_CATALOG"
 output_dir: "docs"
 delete_merged_file: true
-
-
-    #chapter_name: "Chapter"
-#rmd_files: ["index.Rmd", "01-Tables_and_Views.Rmd", "02-Support_Tables.Rmd", "03-Merging_to_Other_Databases.Rmd", "04-Additional_Resources.Rmd"]
+language:
+  ui:
+   chapter_name: "Chapter "
+rmd_files: ["index.Rmd", "01-Metrics-Index.Rmd"]
