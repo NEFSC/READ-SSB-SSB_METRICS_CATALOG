@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Performance measures website | SSB Metrics Catalog</title>
+  <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Performance measures website | SSB Metrics Catalog" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Performance measures website | SSB Metrics Catalog" />
+  
+  <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  
+
+<meta name="author" content="Samantha Werner and Robert Murphy" />
+
+
+<meta name="date" content="2026-02-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ssb-metrics-index-table.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<img src="logo.png" style="width: 300px; height: 150px
+float: center margin-bottom: 100px margin-left:100px"/>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SSB METRICS CATALOG</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a></li>
+<li class="chapter" data-level="2" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html"><i class="fa fa-check"></i><b>2</b> SSB Metrics Index Table</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#definitions"><i class="fa fa-check"></i><b>2.1</b> Definitions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="performance-measures-website.html"><a href="performance-measures-website.html"><i class="fa fa-check"></i><b>3</b> Performance measures website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#product-overview"><i class="fa fa-check"></i><b>3.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#point-of-contact"><i class="fa fa-check"></i><b>3.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="3.1.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-outputsoutlets"><i class="fa fa-check"></i><b>3.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#list-of-metrics"><i class="fa fa-check"></i><b>3.2</b> List of metrics</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics"><i class="fa fa-check"></i><b>3.2.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.2.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-level-metrics"><i class="fa fa-check"></i><b>3.2.2</b> FMP-level Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#metric-descriptions"><i class="fa fa-check"></i><b>3.3</b> Metric Descriptions:</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics-1"><i class="fa fa-check"></i><b>3.3.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-specific-metrics"><i class="fa fa-check"></i><b>3.3.2</b> FMP-Specific Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#additional-methodsdecision-rules"><i class="fa fa-check"></i><b>3.4</b> Additional methods/decision rules</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#summary-group-decision-rules"><i class="fa fa-check"></i><b>3.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="3.4.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#deflation"><i class="fa fa-check"></i><b>3.4.2</b> Deflation</a></li>
+<li class="chapter" data-level="3.4.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#matching-trips-veslog---cfders"><i class="fa fa-check"></i><b>3.4.3</b> Matching Trips (veslog - cfders)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#binning-rules"><i class="fa fa-check"></i><b>3.4.4</b> Binning Rules</a></li>
+<li class="chapter" data-level="3.4.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#average-prices"><i class="fa fa-check"></i><b>3.4.5</b> Average Prices</a></li>
+<li class="chapter" data-level="3.4.6" data-path="performance-measures-website.html"><a href="performance-measures-website.html#exclusions"><i class="fa fa-check"></i><b>3.4.6</b> Exclusions</a></li>
+<li class="chapter" data-level="3.4.7" data-path="performance-measures-website.html"><a href="performance-measures-website.html#outliers"><i class="fa fa-check"></i><b>3.4.7</b> Outliers</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources-and-code"><i class="fa fa-check"></i><b>3.5</b> Data Sources and code</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources"><i class="fa fa-check"></i><b>3.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="3.5.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#code"><i class="fa fa-check"></i><b>3.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SSB Metrics Catalog</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="performance-measures-website" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Performance measures website<a href="performance-measures-website.html#performance-measures-website" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="product-overview" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Product Overview<a href="performance-measures-website.html#product-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Performance Measures website, managed by the Social Sciences Branch of the NEFSC, provides a public, data-driven overview of the economic and social performance of various Northeast Fishery Management Plans (FMPs). The site tracks and displays critical indicators of a fishery’s health and economic impact.</p>
+<ul>
+<li>Unit - Active vessels</li>
+<li>Summary Group(s) - Primary FMP</li>
+<li>Frequency - Updated annually</li>
+<li>Time Series - Annual (2007-2024)*</li>
+</ul>
+<div id="point-of-contact" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Point of Contact<a href="performance-measures-website.html#point-of-contact" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Chad Demarest (<a href="mailto:Chad.Demarest@noaa.gov" class="email">Chad.Demarest@noaa.gov</a>)</p>
+</div>
+<div id="data-outputsoutlets" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Data Outputs/Outlets<a href="performance-measures-website.html#data-outputsoutlets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Code below used to create the Performance Measures Website metrics</p>
+</div>
+</div>
+<div id="list-of-metrics" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> List of metrics<a href="performance-measures-website.html#list-of-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="all-ne-fmp-plans-combined-metrics" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> All NE FMP plans combined metrics<a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Total vessels</li>
+<li>Total trips</li>
+<li>Total DAS</li>
+<li>Total FMP revenue</li>
+</ul>
+</div>
+<div id="fmp-level-metrics" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> FMP-level Metrics<a href="performance-measures-website.html#fmp-level-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Revenue</li>
+<li>Average Prices</li>
+<li>Revenue per vessel</li>
+<li>Number of vessels</li>
+<li>Revenue per trip</li>
+<li>Number of trips</li>
+<li>Revenue per Days at Sea</li>
+<li>Number of Days at Sea</li>
+<li>Gini Coefficient</li>
+</ul>
+</div>
+</div>
+<div id="metric-descriptions" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Metric Descriptions:<a href="performance-measures-website.html#metric-descriptions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="all-ne-fmp-plans-combined-metrics-1" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> All NE FMP plans combined metrics<a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Total Vessels
+<ul>
+<li>Description: Number of uniquely identified vessels that took a fishing trip in a calendar year.</li>
+</ul></li>
+<li>Total Trips
+<ul>
+<li>Description: The sum of trips from each FMP in a calendar year. See definition of trips in a FMP below.</li>
+</ul></li>
+<li>Days at Sea
+<ul>
+<li>Description: The sum of days at sea from each FMP in a calendar year. See definition of Days at Sea in a FMP below.</li>
+</ul></li>
+<li>FMP Revenue
+<ul>
+<li>Description: The sum of total revenue earned from each FMP fishery. See definition of revenue in a FMP below.</li>
+</ul></li>
+</ul>
+</div>
+<div id="fmp-specific-metrics" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> FMP-Specific Metrics<a href="performance-measures-website.html#fmp-specific-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Vessels
+*Description: Number of vessels that take at least one trip where more than 50% of its revenue comes from species included in the FMP.</li>
+<li>Trips
+<ul>
+<li>Description: Total trips taken in the FMP fishery. A trip is identified as having participated in the fishery if greater than 50% of the revenue for the trip was derived from FMP species.</li>
+</ul></li>
+<li>Days at Sea
+<ul>
+<li>Description: Time from when a vessel leaves port to when it returns on a trip in the FMP fishery. This metric is the sum of all days at sea by all vessels taking a trip in the FMP. The calculation of this metric does not include any demarcation lines.</li>
+</ul></li>
+<li>Revenue
+<ul>
+<li>Description: For each year, the sum of total deflated revenue from species in the FMP fishery (FMP Revenue) and the revenue from other species landed on trips identified as being in the fishery (Non-FMP Revenue).</li>
+</ul></li>
+<li>Average Prices
+<ul>
+<li>Description: For each species in the FMP, this is an implicit price calculated as total deflated revenue divided by total landed pounds.</li>
+</ul></li>
+<li>Revenue per Vessel
+<ul>
+<li>Description: For each vessel included in the FMP data, deflated revenue is divided into FMP revenue and non-FMP revenue. Per vessel revenue is calculated as the total revenue in each category divided by the total vessels in each year.</li>
+</ul></li>
+<li>Total Revenue per Trip
+<ul>
+<li>Description: Total deflated revenue from FMP and non-FMP species divided by the total number of trips identified as having taken place in the fishery.</li>
+</ul></li>
+<li>Revenue per Day at Sea
+<ul>
+<li>Description: Total deflated revenue from both FMP and non-FMP species landed, divided by the total number of days absent on trips in the fishery.</li>
+</ul></li>
+<li>Gini Coefficient
+<ul>
+<li>Description: A measure of revenue inequality in the fishery, and can range between 0 (perfect equality) and 1 (perfect inequality). Perfect inequality means that one entity receives all the revenue from the fishery.</li>
+<li>Equation: G = Σ (2in - 1)xi / 2nū</li>
+<li>Where: i = vessel’s rank in revenue in ascending order xi = annual revenue in the fishery for vessel i n = total number of vessels ū = mean vessel revenue</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="additional-methodsdecision-rules" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Additional methods/decision rules<a href="performance-measures-website.html#additional-methodsdecision-rules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-group-decision-rules" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Summary Group Decision Rules<a href="performance-measures-website.html#summary-group-decision-rules" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>FMP defined as at least one trip where more than 50% of its revenue comes from species included in the FMP.</p>
+</div>
+<div id="deflation" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Deflation<a href="performance-measures-website.html#deflation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>All dollar values have been deflated using the GDP implicit price deflator, deflating prices to constant dollars for the most recent year where data from the BEA is provided. Deflation code can be found in the website product code.</p>
+</div>
+<div id="matching-trips-veslog---cfders" class="section level3 hasAnchor" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> Matching Trips (veslog - cfders)<a href="performance-measures-website.html#matching-trips-veslog---cfders" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We match trip and dealer records by vtrserno/serial_num.</p>
+</div>
+<div id="binning-rules" class="section level3 hasAnchor" number="3.4.4">
+<h3><span class="header-section-number">3.4.4</span> Binning Rules<a href="performance-measures-website.html#binning-rules" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A trip is assigned to an FMP based on the highest FMP revenue value.</p>
+</div>
+<div id="average-prices" class="section level3 hasAnchor" number="3.4.5">
+<h3><span class="header-section-number">3.4.5</span> Average Prices<a href="performance-measures-website.html#average-prices" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We are only using the average prices for trip records which didn’t have a matching dealer record. For the ones that do, we use the calculated prices from the dealer record.</p>
+</div>
+<div id="exclusions" class="section level3 hasAnchor" number="3.4.6">
+<h3><span class="header-section-number">3.4.6</span> Exclusions<a href="performance-measures-website.html#exclusions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>If vtrserno is a match, but permit = ‘000000’, the trip is considered again when looking at orphan trips</li>
+<li>Mismatched trips (multiple vtrserno corresponding to one tripid, and one(or more) vtrserno has a match, but other(s) do not) are not included in the orphan trips group</li>
+</ol>
+</div>
+<div id="outliers" class="section level3 hasAnchor" number="3.4.7">
+<h3><span class="header-section-number">3.4.7</span> Outliers<a href="performance-measures-website.html#outliers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Revenue per Trip metric is used to identify outliers.
+Outlier removal is based on interquartile test
+<em>First, Lower (&lt;=0.25) and Upper (&gt;=0.75) Quartile and calculated. Then, the lower bound for determining an outlier is lq-1.5</em>(uq-lq), and the upper bound is uq+1.5*(uq-lq). Any values less than the lower bound or greater than the upper bound are removed.</p>
+</div>
+</div>
+<div id="data-sources-and-code" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Data Sources and code<a href="performance-measures-website.html#data-sources-and-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-sources" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Data Sources<a href="performance-measures-website.html#data-sources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>CFDBS
+VTR
+SFCLAM</p>
+</div>
+<div id="code" class="section level3 hasAnchor" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Code<a href="performance-measures-website.html#code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Metric Creation Code File Location
+<a href="https://github.com/NEFSC/READ-SSB-PM" class="uri">https://github.com/NEFSC/READ-SSB-PM</a>
+Read Me file (file to run code): <a href="https://github.com/NEFSC/READ-SSB-PM\README.md" class="uri">https://github.com/NEFSC/READ-SSB-PM\README.md</a></p>
+<p>Website Production Code Location: <a href="https://github.com/NEFSC/READ-SSB-PM" class="uri">https://github.com/NEFSC/READ-SSB-PM</a>
+Read Me file (file to run code): <a href="https://github.com/NEFSC/READ-SSB-PM/blob/main/README.md" class="uri">https://github.com/NEFSC/READ-SSB-PM/blob/main/README.md</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ssb-metrics-index-table.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
