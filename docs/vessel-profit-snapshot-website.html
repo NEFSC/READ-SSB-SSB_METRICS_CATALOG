@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 2022 Vessel Profit snapshot website | SSB Metrics Catalog</title>
+  <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 2022 Vessel Profit snapshot website | SSB Metrics Catalog" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 2022 Vessel Profit snapshot website | SSB Metrics Catalog" />
+  
+  <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  
+
+<meta name="author" content="Samantha Werner and Robert Murphy" />
+
+
+<meta name="date" content="2026-02-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="performance-measures-website.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<img src="logo.png" style="width: 300px; height: 150px
+float: center margin-bottom: 100px margin-left:100px"/>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SSB METRICS CATALOG</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a></li>
+<li class="chapter" data-level="2" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html"><i class="fa fa-check"></i><b>2</b> SSB Metrics Index Table</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#definitions"><i class="fa fa-check"></i><b>2.1</b> Definitions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="performance-measures-website.html"><a href="performance-measures-website.html"><i class="fa fa-check"></i><b>3</b> Performance measures website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#product-overview"><i class="fa fa-check"></i><b>3.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#point-of-contact"><i class="fa fa-check"></i><b>3.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="3.1.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-outputsoutlets"><i class="fa fa-check"></i><b>3.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#list-of-metrics"><i class="fa fa-check"></i><b>3.2</b> List of metrics</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics"><i class="fa fa-check"></i><b>3.2.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.2.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-level-metrics"><i class="fa fa-check"></i><b>3.2.2</b> FMP-level Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#metric-descriptions"><i class="fa fa-check"></i><b>3.3</b> Metric Descriptions</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics-1"><i class="fa fa-check"></i><b>3.3.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-specific-metrics"><i class="fa fa-check"></i><b>3.3.2</b> FMP-Specific Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#additional-methodsdecision-rules"><i class="fa fa-check"></i><b>3.4</b> Additional methods/decision rules</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#summary-group-decision-rules"><i class="fa fa-check"></i><b>3.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="3.4.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#deflation"><i class="fa fa-check"></i><b>3.4.2</b> Deflation</a></li>
+<li class="chapter" data-level="3.4.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#matching-trips-veslog---cfders"><i class="fa fa-check"></i><b>3.4.3</b> Matching Trips (veslog - cfders)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#binning-rules"><i class="fa fa-check"></i><b>3.4.4</b> Binning Rules</a></li>
+<li class="chapter" data-level="3.4.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#average-prices"><i class="fa fa-check"></i><b>3.4.5</b> Average Prices</a></li>
+<li class="chapter" data-level="3.4.6" data-path="performance-measures-website.html"><a href="performance-measures-website.html#exclusions"><i class="fa fa-check"></i><b>3.4.6</b> Exclusions</a></li>
+<li class="chapter" data-level="3.4.7" data-path="performance-measures-website.html"><a href="performance-measures-website.html#outliers"><i class="fa fa-check"></i><b>3.4.7</b> Outliers</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources-and-code"><i class="fa fa-check"></i><b>3.5</b> Data Sources and code</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources"><i class="fa fa-check"></i><b>3.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="3.5.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#code"><i class="fa fa-check"></i><b>3.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html"><i class="fa fa-check"></i><b>4</b> 2022 Vessel Profit snapshot website</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#product-overview-1"><i class="fa fa-check"></i><b>4.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#point-of-contact-1"><i class="fa fa-check"></i><b>4.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="4.1.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-outputsoutlets-1"><i class="fa fa-check"></i><b>4.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#list-of-metrics-1"><i class="fa fa-check"></i><b>4.2</b> List of Metrics</a></li>
+<li class="chapter" data-level="4.3" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#metric-descriptions-1"><i class="fa fa-check"></i><b>4.3</b> Metric Descriptions</a></li>
+<li class="chapter" data-level="4.4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1"><i class="fa fa-check"></i><b>4.4</b> Additional methods/decision rules</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#summary-group-decision-rules-1"><i class="fa fa-check"></i><b>4.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="4.4.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#depreciation"><i class="fa fa-check"></i><b>4.4.2</b> Depreciation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-and-code-1"><i class="fa fa-check"></i><b>4.5</b> Data Sources and Code</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-1"><i class="fa fa-check"></i><b>4.5.1</b> Data sources</a></li>
+<li class="chapter" data-level="4.5.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#code-1"><i class="fa fa-check"></i><b>4.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SSB Metrics Catalog</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vessel-profit-snapshot-website" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> 2022 Vessel Profit snapshot website<a href="vessel-profit-snapshot-website.html#vessel-profit-snapshot-website" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="product-overview-1" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Product Overview<a href="vessel-profit-snapshot-website.html#product-overview-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This site presents commercial fishing vessel profits during 2022 for vessels who responded to the Greater Atlantic Region Commercial Fishing Business Cost Survey
+* Unit: Vessel-level information (responding vessels only)
+* Summary Group(s): Primary gear type, FMP and gear of responding vessels
+* Frequency: Annual
+* Time Series: Snapshot (2022)</p>
+<div id="point-of-contact-1" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Point of Contact<a href="vessel-profit-snapshot-website.html#point-of-contact-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Gregory Ardini (<a href="mailto:Gregory.Ardini@noaa.gov" class="email">Gregory.Ardini@noaa.gov</a>)</p>
+</div>
+<div id="data-outputsoutlets-1" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Data Outputs/Outlets<a href="vessel-profit-snapshot-website.html#data-outputsoutlets-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://ardini-noaa.github.io/2022_Vessel_Profit_Snapshots/" class="uri">https://ardini-noaa.github.io/2022_Vessel_Profit_Snapshots/</a></p>
+</div>
+</div>
+<div id="list-of-metrics-1" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> List of Metrics<a href="vessel-profit-snapshot-website.html#list-of-metrics-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Revenue</li>
+<li>Costs</li>
+<li>Operating profit</li>
+<li>Total profit</li>
+</ul>
+</div>
+<div id="metric-descriptions-1" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Metric Descriptions<a href="vessel-profit-snapshot-website.html#metric-descriptions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Revenue</p>
+<ul>
+<li>Commercial revenue</li>
+<li>All individuals that were sampled for the 2022 cost survey were owners of federally-permitted commercial fishing vessels active in 2021 or 2022. Federally-permitted vessels are required to sell their catch to federally-licensed seafood dealers and commercial revenue is derived from harvested catch on commercial trips sold to a licensed dealer. All vessels included in the profit snapshots generated commercial fishing revenue &gt;$0 during 2022 from landings occurring in the Northeast region (ME to Cape Hatteras, NC).</li>
+<li>The values reported by dealers feed into the Catch Accounting and Monitoring System (CAMS) housed at the Greater Atlantic Regional Fisheries Office (GARFO) and the NEFSC. Vessel revenues are queried directly from CAMS with two exceptions. The first is for cases in which there is a reported commercial landing volume in CAMS but no associated value. For these observations, prices were generally imputed as the average species price for 2022 to calculate value (landings*price). If the observation had a dealer disposition code in which a value is not expected (e.g. “No market”, “Personal Use”) then values were left blank. In total, 3.6% of observations used an imputed price rather than a dealer reported price. The second exception is for revenue derived from bluefin tuna as the reporting requirements for this species differs from other species landed in the Northeast region. Bluefin tuna revenue was queried from the Atlantic Coastal Cooperative Statistics Program (ACCSP) data warehouse, while all other species revenue was queried from CAMS.</li>
+</ul></li>
+<li><p>For Hire revenue</p>
+<ul>
+<li>While the 2022 cost survey was sent to vessels engaged in commercial fishing during 2021 or 2022, some of these vessels also were engaged in for-hire fishing. In order to accurately capture vessel-level profits, it is important to include this additional source of revenue. For-hire revenue is derived from angler/customer payments on recreational trips. All 2022 party/charter trips, and the number of anglers per trip, were first pulled from logbook data. Average angler charter/guide fees by state were then retrieved from the results of the 2022 National Angler Expenditure Survey administered by NOAA Fisheries. This survey is conducted every 3-5 years to better understand the economic contribution of recreational fishing within each region. The survey collects information on a variety of angler expenditures including bait, ice, lodging, and travel costs. For the purpose of the vessel profit calculation, only the amount paid by the angler for the party/charter ticket is used. State-level averages from the angler expenditure survey were used in light of the variability in fees by state within the Northeast region as well as the high level of response for each state. The average angler fee was multiplied by the number of anglers for each 2022 party/charter trip by state. Finally, the trip-level calculations were summed to an annual vessel-level value.</li>
+</ul></li>
+<li><p>Costs</p>
+<ul>
+<li><p>Description:</p>
+<ul>
+<li>New/Replacement, Repair/Maintenance, and Upgrade Costs for the Selected Vessel
+<ul>
+<li>Propulsion Engine</li>
+<li>Seine Skiff (Seine survey version only)</li>
+<li>Deck Equipment / Other Machinery</li>
+<li>Haul-out Costs</li>
+<li>Hull</li>
+<li>Fishing Gear</li>
+<li>Wheelhouse Electronics</li>
+<li>Processing / Refrigeration</li>
+<li>Safety Equipment</li>
+<li>Vessel Costs for the Selected Vessel</li>
+<li>Mooring/Docking Fees</li>
+<li>IFQ Cost Recovery Fees (Scallop Dredge survey version only)</li>
+<li>State and Federal Permits and/or License Renewal Fees</li>
+<li>Launch and Trailer Fees (Handgear survey version only)</li>
+<li>Annual Vessel Insurance Premium</li>
+</ul></li>
+<li>Trip Expenses for the Selected Vessel
+<ul>
+<li>Fuel</li>
+<li>Bait</li>
+<li>Food for captain and crew</li>
+<li>Ice</li>
+<li>Catch Handling- costs for auction, lumping, grading, shipping/trucking, and unloading.</li>
+<li>At-sea Processing At-sea Boxing/Packaging</li>
+<li>Paralytic Shellfish Poison Testing (Hydraulic Dredge survey version only)</li>
+</ul></li>
+<li>Crew Payment System for the Selected Vessel
+<ul>
+<li>Total Payments to Crew</li>
+<li>Total Payments to Hired Captain</li>
+<li>Benefits Paid to Crew and/or Hired Captain</li>
+</ul></li>
+<li>Overhead Costs
+<ul>
+<li>Business Vehicle Costs</li>
+<li>Business Travel Costs</li>
+<li>Association Fees</li>
+<li>Legal Expenses</li>
+<li>Additional Labor Payments</li>
+<li>Advertising Costs</li>
+<li>Communication Costs</li>
+<li>Office/Workshop/Storage Expenses</li>
+<li>Spotter Planes, Drones or Other Aerial Search Expenses (Seine survey version only)</li>
+</ul></li>
+<li>Quota Costs and Revenues for the Selected Vessel
+<ul>
+<li>Quota Leasing Costs</li>
+<li>Quota Leasing Revenue</li>
+<li>Quota Monitoring Costs</li>
+</ul></li>
+<li>Other Costs for the Selected Vessel</li>
+</ul></li>
+<li><p>From these various cost categories within the survey, some data manipulation was required to make costs usable at the vessel/annual level. These data manipulation steps are summarized below.</p></li>
+<li><p>Trip Expenses Survey respondents were given the option of providing trip expenses either at the annual level or as a trip average. For those respondents who filled in the average cost per trip, the value was multiplied by the number of commercial trips taken during 2022. In general, the number of trips was used directly from the survey (Q2). In cases where this information was not filled in, the number of trips was retrieved from VTRs and/or dealer reports. Trip expenses were then allocated to the vessel owner based on how the survey respondent indicated these expenses were paid (Q6). If the respondent answered that the crew paid for trip expenses, the assigned cost to the vessel owner was $0. If the respondent answered that the boat/owner paid for trip expenses, 100% of these costs were assigned to the vessel owner. If the respondent answered that trip expenses were shared between boat/owner and crew, these costs were multiplied by the % indicated for the vessel owner to assign these costs.
+Overhead Costs: Survey respondents were given the option of providing these costs either at the vessel level or at the business level. For those respondents who filled in business level costs, the value was divided by the number of vessels owned by the respondent during 2022. The number of vessels owned was taken directly from the survey (Q13).</p></li>
+<li><p>Quota Costs and Revenues: Survey respondents were given the option to provide quota leasing costs either at the vessel-level or across multiple vessels. If this cost was provided across multiple vessels, the value was divided by the specific number of vessels the quota leasing cost was attributed to (Q17). Similar to trip expenses, quota leasing costs were then allocated to the vessel owner based on how the survey respondent indicated these expenses were paid (Q18). If the respondent answered that the crew paid for trip expenses, the assigned cost to the vessel owner was $0. If the respondent answered that the boat/owner paid for trip expenses, 100% of these costs were assigned to the vessel owner. If the respondent answered that trip expenses were shared between boat/owner and crew, these costs were multiplied by the % indicated for the vessel owner to assign these costs. Quota leasing revenue was then subtracted from costs to calculate net quota leasing costs to the vessel. Quota leasing occurs within the groundfish, sea scallop, surf clam/ocean quahog, and tilefish fisheries. Due to net quota leasing representing a small portion of total costs for the various fleets presented on this site, these costs are not included in the cost distribution summaries found in Chapter 7. However quota net leasing costs are included in total profit profiles found in Chapter 9.</p></li>
+<li><p>Other Costs: At the end of the survey, respondents were given the opportunity to list other costs that were not included in the survey. When other costs were listed, they were evaluated on a case-by-case basis. When deemed possible, other costs listed were allocated to an existing cost category. Those that could not be allocated to an existing cost category were excluded from the profit calculation. Examples of costs that were able to be allocated to an existing category include registration fees were added to Permit Fees and non-descript vessel repairs/maintenance were allocated evenly across the various repair/maintenance categories.</p></li>
+<li><p>Two costs, crew supplies and fresh water, that are collected by at-sea observers that were not included in the 2022 cost survey. To capture these costs, data from observer programs was used to calculate average costs per trip by gear. All 2022 trips from observer data tables were pulled, along with the primary gear utilized on each trip. The average crew supply and fresh water trip costs by gear type were calculated and these averages were then merged by gear with all of the trips taken by survey responding vessels during 2022. Finally, trip-level costs were summed to the vessel-level.</p></li>
+</ul></li>
+<li><p>Operating profit</p>
+<ul>
+<li>Operating profit refers to gross revenues minus operating costs (variable costs). Within the 2022 cost survey, two sections in particular cover operating costs. The trip expenses section collects information on fuel, bait, ice, and food. The crew payment section includes the total amount paid to crew and hired captains, as well as any benefits paid out. Outside of the survey, a few costs collected by at-sea observers, fresh water and crew supplies, are also included in the operating profit calculation.</li>
+<li>Equation: Gross Revenue - (Trip Expenses + Crew Payments)</li>
+</ul></li>
+<li><p>Total profit</p>
+<ul>
+<li>Total profit refers to operating profit minus non-operating costs (fixed and quasi-fixed costs). Within the 2022 cost survey, a few different sections include non-operating costs. The vessel repairs and upgrades section (#2) includes the amount spent on various vessel components including the engine, hull, fishing gear, electronics, and safety equipment. The vessel costs section (#3) factors in mooring fees, permit fees, and vessel insurance. The overhead section (#6) includes, among other costs, business vehicle expenses, association fees, non-crew labor payments, and office/storage expenses. The quota costs and revenue section (#8) is also included as a component of non-operating costs. Lastly, depreciation is estimated from the vessel values section (#7).</li>
+<li>Equation: Operating Profit - (RMUI/other + Vessel Costs + Overhead + Quota Leasing + Depreciation)</li>
+</ul></li>
+</ul>
+</div>
+<div id="additional-methodsdecision-rules-1" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Additional methods/decision rules<a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-group-decision-rules-1" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Summary Group Decision Rules<a href="vessel-profit-snapshot-website.html#summary-group-decision-rules-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="primary-gear" class="section level4 hasAnchor" number="4.4.1.1">
+<h4><span class="header-section-number">4.4.1.1</span> Primary Gear<a href="vessel-profit-snapshot-website.html#primary-gear" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Vessel primary gear is defined according to the largest contributor to total commercial vessel revenue during 2022. Fishing gears, primarily from Vessel Trip Reports (VTRs) were grouped into the same categories as used for the 2022 cost survey sampling frame. For example, bottom trawl and midwater trawl were grouped into a broader trawl category. The resulting primary gear groups are as follows: gillnet, handgear, hydraulic dredge, longline, pot/trap, scallop dredge, seine, trawl, and unknown. Due to low response levels for some primary gear groups, results are unable to be presented. The scale of vessel operations, as indicated by revenues and costs, is influenced by vessel characteristics. As such, the Cost Data Visualization Tool is a helpful reference for certain characteristics by gear (e.g. vessel length and average crew) for respondents to the 2022 cost survey.
+As a sensitivity test, results were examined under the scenario of gear only being defined if 100% of the vessel’s revenue was generated from that gear during 2022. In general, results were similar to those presented on this site.
+#### Primary Fishery
+Vessel primary fishery is also defined as the largest contributor to total commercial vessel revenue during 2022. Species were grouped into Fishery Management Plans (FMPs) as managed by the New England and Mid-Atlantic Fishery Management Councils, as well as American lobster, managed by the Atlantic States Marine Fisheries Commission. A few other fisheries (channeled whelk, highly migratory species, striped bass) are also included in summary tables due to sufficient response of at least 3 vessels. Fisheries with at least 5 responding vessels are also included in boxplots. A few other fisheries received low response levels and results are unable to be presented. As a sensitivity test, results were examined under the scenario of fishery only being defined if 100% of the vessel’s revenue was generated from that fishery during 2022. In general, results were similar to those presented on this site.
+#### Primary Gear/Fishery
+Vessel primary gear and primary fishery were also combined to examine differences within more specific fleets. For most gear types, multiple fisheries are represented. However, scallop dredge gear, for example, is represented by only one fishery (sea scallop). Due to low response levels for some primary gear/fisheries, results are unable to be presented.</p>
+</div>
+</div>
+<div id="depreciation" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Depreciation<a href="vessel-profit-snapshot-website.html#depreciation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The final cost component included in the profit calculation is vessel depreciation. Ideally, a different depreciation value would be assigned to each physical capital component (e.g. electronics, engine, hull) using the estimated market value and age of each piece of vessel equipment. This method would require additional information beyond that collected in the 2022 cost survey.
+Information on the estimated market vessel value, including all equipment and fishing gear, was collected in the 2022 cost survey. However the number of responses to this question were lower than other survey questions explained in part by the inclusion of a “I prefer not to answer” option, which was not included for other survey questions. Given the relative lack of response for vessel market value, an alternate method was used in which shadow values of vessel characteristics including age, gross tonnage, length, and type of construction were estimated. The shadow values were then multiplied by each vessel characteristic to calculate a total vessel value. From the vessel values, a depreciation cost was calculated as 4% of the value for those vessels less than 25 years old and 2% of the value for those vessels 25 years or older following methods utilized for fishing fleets in Kitts et al. (2020).</p>
+</div>
+</div>
+<div id="data-sources-and-code-1" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Data Sources and Code<a href="vessel-profit-snapshot-website.html#data-sources-and-code-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-sources-1" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Data sources<a href="vessel-profit-snapshot-website.html#data-sources-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cost Data - (data originally used from flat file but has since been database to Oracle via SSB_COST_SURVEY.VCS_COMMON_VARIABLES_MV
+Revenue - CAMS</p>
+</div>
+<div id="code-1" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> Code<a href="vessel-profit-snapshot-website.html#code-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Metric Creation Code Files <a href="https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots/tree/main/scripts_to_generate_input_files" class="uri">https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots/tree/main/scripts_to_generate_input_files</a>
+Read Me file (file to run code): N/A
+Website Production Code Location: <a href="https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots" class="uri">https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots</a>
+Read Me file (file to run code): <a href="https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots/blob/main/README.md" class="uri">https://github.com/Ardini-NOAA/2022_Vessel_Profit_Snapshots/blob/main/README.md</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="performance-measures-website.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

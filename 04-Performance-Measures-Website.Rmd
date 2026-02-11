@@ -36,7 +36,7 @@ Code below used to create the Performance Measures Website metrics
 * Gini Coefficient 
 
 
-## Metric Descriptions: 
+## Metric Descriptions 
 
 ### All NE FMP plans combined metrics
 * Total Vessels
