@@ -1,3 +1,4 @@
+tab:metrics-table
 overview
 getting-started
 ssb-metrics-index-table
@@ -36,3 +37,17 @@ depreciation
 data-sources-and-code-1
 data-sources-1
 code-1
+cost-data-visualization-tool
+product-overview-2
+point-of-contact-2
+data-outputsoutlets-2
+list-of-metrics-2
+metric-descriptions-2
+sub-cost-categories
+major-cost-categories
+additional-methodsdecision-rules-2
+summary-group-decision-rules-2
+data-quality-control-and-outlier-removal
+data-sources-and-code-2
+data-sources-2
+code-2

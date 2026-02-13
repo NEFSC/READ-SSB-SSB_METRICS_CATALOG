@@ -1,4 +1,4 @@
-# 2022 Vessel Profit snapshot website 
+# 2022 Vessel Profit Snapshot Website 
 
 ## Product Overview
 This site presents commercial fishing vessel profits during 2022 for vessels who responded to the Greater Atlantic Region Commercial Fishing Business Cost Survey 
@@ -93,7 +93,7 @@ Overhead Costs: Survey respondents were given the option of providing these cost
   * Total profit refers to operating profit minus non-operating costs (fixed and quasi-fixed costs). Within the 2022 cost survey, a few different sections include non-operating costs. The vessel repairs and upgrades section (#2) includes the amount spent on various vessel components including the engine, hull, fishing gear, electronics, and safety equipment. The vessel costs section (#3) factors in mooring fees, permit fees, and vessel insurance. The overhead section (#6) includes, among other costs, business vehicle expenses, association fees, non-crew labor payments, and office/storage expenses. The quota costs and revenue section (#8) is also included as a component of non-operating costs. Lastly, depreciation is estimated from the vessel values section (#7).
   * Equation: Operating Profit - (RMUI/other + Vessel Costs + Overhead + Quota Leasing + Depreciation)
 
-## Additional methods/decision rules
+## Additional Methods/Decision Rules
 
 ### Summary Group Decision Rules 
 #### Primary Gear 
@@ -109,7 +109,7 @@ The final cost component included in the profit calculation is vessel depreciati
 Information on the estimated market vessel value, including all equipment and fishing gear, was collected in the 2022 cost survey. However the number of responses to this question were lower than other survey questions explained in part by the inclusion of a “I prefer not to answer” option, which was not included for other survey questions. Given the relative lack of response for vessel market value, an alternate method was used in which shadow values of vessel characteristics including age, gross tonnage, length, and type of construction were estimated. The shadow values were then multiplied by each vessel characteristic to calculate a total vessel value. From the vessel values, a depreciation cost was calculated as 4% of the value for those vessels less than 25 years old and 2% of the value for those vessels 25 years or older following methods utilized for fishing fleets in Kitts et al. (2020).
 
 ## Data Sources and Code
-### Data sources
+### Data Sources
 Cost Data -  (data originally used from flat file but has since been database to Oracle via SSB_COST_SURVEY.VCS_COMMON_VARIABLES_MV 
 Revenue - CAMS 
 

@@ -1,5 +1,45 @@
 # SSB Metrics Index Table 
 
 ## Definitions 
+*Level of reporting* -  Reporting component  (e.g., vessel, trip) 
 
+*Summary Group(s)* -  Additional stratification of how the unit is grouped, where applicable (e.g., primary FMP) 
+
+*Frequency* - Interval at which data are reported (e.g., Annual, Monthly, quarterly) 
+
+*Time Series* - Data series reported
+
+```{r metrics-table, echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(kableExtra)
+
+# 1. Read the file
+df <- read_excel("C:/Users/samantha.l.werner/Desktop/Github/READ-SSB-SSB_METRICS_CATALOG/Index_table.xlsx") 
+
+# 2. Repair ONLY empty names to avoid the 'zero-length' error while keeping spaces in others
+colnames(df)[colnames(df) == ""] <- "Unnamed"
+
+# 3. Process and Render
+df %>%
+  # Use backticks `` for names with spaces
+  fill(`Metric Category`, .direction = "down") %>% 
+  filter(!is.na(Metric)) %>% 
+  kbl(
+    booktabs = TRUE, 
+    align = "l", 
+    longtable = TRUE,
+    # Define the display names here to get rid of the periods
+    col.names = c("Metric Category", "Metric", "Data Output Source", "Unit", "Summary Group(s)", "Time Series"),
+    caption = "Economic and Social Performance Metrics Overview"
+  ) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "bordered", "condensed"),
+    full_width = FALSE
+  ) %>%
+  collapse_rows(columns = 1, valign = "middle") %>%
+  # Adds the scrollable feature with a fixed header
+  scroll_box(width = "100%", height = "500px", fixed_thead = TRUE)
+```
 

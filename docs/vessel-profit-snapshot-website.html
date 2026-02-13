@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 2022 Vessel Profit snapshot website | SSB Metrics Catalog</title>
+  <title>Chapter 5 2022 Vessel Profit Snapshot Website | SSB Metrics Catalog</title>
   <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 2022 Vessel Profit snapshot website | SSB Metrics Catalog" />
+  <meta property="og:title" content="Chapter 5 2022 Vessel Profit Snapshot Website | SSB Metrics Catalog" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 2022 Vessel Profit snapshot website | SSB Metrics Catalog" />
+  <meta name="twitter:title" content="Chapter 5 2022 Vessel Profit Snapshot Website | SSB Metrics Catalog" />
   
   <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Samantha Werner and Robert Murphy" />
 
 
-<meta name="date" content="2026-02-11" />
+<meta name="date" content="2026-02-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="performance-measures-website.html"/>
-
+<link rel="next" href="cost-data-visualization-tool.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -52,6 +52,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <img src="logo.png" style="width: 300px; height: 150px
 float: center margin-bottom: 100px margin-left:100px"/>
 
@@ -84,7 +86,7 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <ul>
 <li class="chapter" data-level="3.1" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#definitions"><i class="fa fa-check"></i><b>3.1</b> Definitions</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="performance-measures-website.html"><a href="performance-measures-website.html"><i class="fa fa-check"></i><b>4</b> Performance measures website</a>
+<li class="chapter" data-level="4" data-path="performance-measures-website.html"><a href="performance-measures-website.html"><i class="fa fa-check"></i><b>4</b> Performance Measures Website</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#product-overview"><i class="fa fa-check"></i><b>4.1</b> Product Overview</a>
 <ul>
@@ -101,7 +103,7 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <li class="chapter" data-level="4.3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics-1"><i class="fa fa-check"></i><b>4.3.1</b> All NE FMP plans combined metrics</a></li>
 <li class="chapter" data-level="4.3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-specific-metrics"><i class="fa fa-check"></i><b>4.3.2</b> FMP-Specific Metrics</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#additional-methodsdecision-rules"><i class="fa fa-check"></i><b>4.4</b> Additional methods/decision rules</a>
+<li class="chapter" data-level="4.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#additional-methodsdecision-rules"><i class="fa fa-check"></i><b>4.4</b> Additional Methods/Decision Rules</a>
 <ul>
 <li class="chapter" data-level="4.4.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#summary-group-decision-rules"><i class="fa fa-check"></i><b>4.4.1</b> Summary Group Decision Rules</a></li>
 <li class="chapter" data-level="4.4.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#deflation"><i class="fa fa-check"></i><b>4.4.2</b> Deflation</a></li>
@@ -117,7 +119,7 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <li class="chapter" data-level="4.5.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#code"><i class="fa fa-check"></i><b>4.5.2</b> Code</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html"><i class="fa fa-check"></i><b>5</b> 2022 Vessel Profit snapshot website</a>
+<li class="chapter" data-level="5" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html"><i class="fa fa-check"></i><b>5</b> 2022 Vessel Profit Snapshot Website</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#product-overview-1"><i class="fa fa-check"></i><b>5.1</b> Product Overview</a>
 <ul>
@@ -126,15 +128,39 @@ float: center margin-bottom: 100px margin-left:100px"/>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#list-of-metrics-1"><i class="fa fa-check"></i><b>5.2</b> List of Metrics</a></li>
 <li class="chapter" data-level="5.3" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#metric-descriptions-1"><i class="fa fa-check"></i><b>5.3</b> Metric Descriptions</a></li>
-<li class="chapter" data-level="5.4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1"><i class="fa fa-check"></i><b>5.4</b> Additional methods/decision rules</a>
+<li class="chapter" data-level="5.4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1"><i class="fa fa-check"></i><b>5.4</b> Additional Methods/Decision Rules</a>
 <ul>
 <li class="chapter" data-level="5.4.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#summary-group-decision-rules-1"><i class="fa fa-check"></i><b>5.4.1</b> Summary Group Decision Rules</a></li>
 <li class="chapter" data-level="5.4.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#depreciation"><i class="fa fa-check"></i><b>5.4.2</b> Depreciation</a></li>
 </ul></li>
 <li class="chapter" data-level="5.5" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-and-code-1"><i class="fa fa-check"></i><b>5.5</b> Data Sources and Code</a>
 <ul>
-<li class="chapter" data-level="5.5.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-1"><i class="fa fa-check"></i><b>5.5.1</b> Data sources</a></li>
+<li class="chapter" data-level="5.5.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-1"><i class="fa fa-check"></i><b>5.5.1</b> Data Sources</a></li>
 <li class="chapter" data-level="5.5.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#code-1"><i class="fa fa-check"></i><b>5.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html"><i class="fa fa-check"></i><b>6</b> Cost Data Visualization Tool</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#product-overview-2"><i class="fa fa-check"></i><b>6.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#point-of-contact-2"><i class="fa fa-check"></i><b>6.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="6.1.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-outputsoutlets-2"><i class="fa fa-check"></i><b>6.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#list-of-metrics-2"><i class="fa fa-check"></i><b>6.2</b> List of Metrics</a></li>
+<li class="chapter" data-level="6.3" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#metric-descriptions-2"><i class="fa fa-check"></i><b>6.3</b> Metric Descriptions</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#sub-cost-categories"><i class="fa fa-check"></i><b>6.3.1</b> Sub-cost categories</a></li>
+<li class="chapter" data-level="6.3.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#major-cost-categories"><i class="fa fa-check"></i><b>6.3.2</b> Major cost categories</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#additional-methodsdecision-rules-2"><i class="fa fa-check"></i><b>6.4</b> Additional Methods/Decision Rules</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#summary-group-decision-rules-2"><i class="fa fa-check"></i><b>6.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="6.4.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-quality-control-and-outlier-removal"><i class="fa fa-check"></i><b>6.4.2</b> Data Quality Control and Outlier Removal</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-sources-and-code-2"><i class="fa fa-check"></i><b>6.5</b> Data Sources and Code</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-sources-2"><i class="fa fa-check"></i><b>6.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="6.5.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#code-2"><i class="fa fa-check"></i><b>6.5.2</b> Code</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -157,7 +183,7 @@ float: center margin-bottom: 100px margin-left:100px"/>
 
             <section class="normal" id="section-">
 <div id="vessel-profit-snapshot-website" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Chapter 5</span> 2022 Vessel Profit snapshot website<a href="vessel-profit-snapshot-website.html#vessel-profit-snapshot-website" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">Chapter 5</span> 2022 Vessel Profit Snapshot Website<a href="vessel-profit-snapshot-website.html#vessel-profit-snapshot-website" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="product-overview-1" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Product Overview<a href="vessel-profit-snapshot-website.html#product-overview-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This site presents commercial fishing vessel profits during 2022 for vessels who responded to the Greater Atlantic Region Commercial Fishing Business Cost Survey
@@ -274,7 +300,7 @@ Overhead Costs: Survey respondents were given the option of providing these cost
 </ul>
 </div>
 <div id="additional-methodsdecision-rules-1" class="section level2 hasAnchor" number="5.4">
-<h2><span class="header-section-number">5.4</span> Additional methods/decision rules<a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">5.4</span> Additional Methods/Decision Rules<a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="summary-group-decision-rules-1" class="section level3 hasAnchor" number="5.4.1">
 <h3><span class="header-section-number">5.4.1</span> Summary Group Decision Rules<a href="vessel-profit-snapshot-website.html#summary-group-decision-rules-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="primary-gear" class="section level4 hasAnchor" number="5.4.1.1">
@@ -296,7 +322,7 @@ Information on the estimated market vessel value, including all equipment and fi
 <div id="data-sources-and-code-1" class="section level2 hasAnchor" number="5.5">
 <h2><span class="header-section-number">5.5</span> Data Sources and Code<a href="vessel-profit-snapshot-website.html#data-sources-and-code-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="data-sources-1" class="section level3 hasAnchor" number="5.5.1">
-<h3><span class="header-section-number">5.5.1</span> Data sources<a href="vessel-profit-snapshot-website.html#data-sources-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">5.5.1</span> Data Sources<a href="vessel-profit-snapshot-website.html#data-sources-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Cost Data - (data originally used from flat file but has since been database to Oracle via SSB_COST_SURVEY.VCS_COMMON_VARIABLES_MV
 Revenue - CAMS</p>
 </div>
@@ -315,8 +341,8 @@ Read Me file (file to run code): <a href="https://github.com/Ardini-NOAA/2022_Ve
           </div>
         </div>
       </div>
-<a href="performance-measures-website.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="performance-measures-website.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cost-data-visualization-tool.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
