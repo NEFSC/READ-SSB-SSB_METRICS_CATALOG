@@ -1,6 +1,6 @@
 --- 
 title: "SSB Metrics Catalog"
-author: "Samantha Werner and Robert Murphy"
+author: "A product of the SSB Data Working Group"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
