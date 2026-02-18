@@ -8,6 +8,7 @@ Performance Measures website, managed by the Social Sciences Branch of the NEFSC
 * Summary Group(s) -  Primary FMP 
 * Frequency - Updated annually 
 * Time Series - Annual (2007-2024)* 
+  *the time series goes to the most recent year for which the code is run and updated regularly  
 
 ### Point of Contact
 Chad Demarest (Chad.Demarest@noaa.gov)
@@ -50,7 +51,7 @@ Code below used to create the Performance Measures Website metrics
   
 ### FMP-Specific Metrics
 * Vessels 
-  *Description: Number of vessels that take at least one trip where more than 50% of its revenue comes from species included in the FMP.
+  * Description: Number of vessels that take at least one trip where more than 50% of its revenue comes from species included in the FMP.
 * Trips  
   * Description: Total trips taken in the FMP fishery. A trip is identified as having participated in the fishery if greater than 50% of the revenue for the trip was derived from FMP species.
 * Days at Sea
