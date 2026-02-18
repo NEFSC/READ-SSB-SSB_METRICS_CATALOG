@@ -1,8 +1,9 @@
 tab:metrics-table
 overview
 getting-started
-ssb-metrics-index-table
 definitions
+ssb-metrics-index-table
+table-columns
 performance-measures-website
 product-overview
 point-of-contact
@@ -52,6 +53,5 @@ data-sources-and-code-2
 data-sources-2
 code-2
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
-table-columns
 primary-fishery
 primary-gearfishery
