@@ -55,3 +55,5 @@ code-2
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
 primary-fishery
 primary-gearfishery
+using-the-ssb-metrics-index-table
+product-chapters
