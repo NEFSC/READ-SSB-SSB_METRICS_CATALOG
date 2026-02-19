@@ -6,6 +6,7 @@ product-chapters
 definitions
 ssb-metrics-index-table
 table-columns
+summary-level-descriptions
 performance-measures-website
 product-overview
 point-of-contact
