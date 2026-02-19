@@ -1,6 +1,8 @@
 tab:metrics-table
 overview
 getting-started
+using-the-ssb-metrics-index-table
+product-chapters
 definitions
 ssb-metrics-index-table
 table-columns
@@ -52,8 +54,3 @@ data-quality-control-and-outlier-removal
 data-sources-and-code-2
 data-sources-2
 code-2
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-primary-fishery
-primary-gearfishery
-using-the-ssb-metrics-index-table
-product-chapters
