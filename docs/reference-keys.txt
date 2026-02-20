@@ -5,8 +5,10 @@ using-the-ssb-metrics-index-table
 product-chapters
 definitions
 ssb-metrics-index-table
+reading-the-table
 table-columns
-summary-level-descriptions
+summary-group-descriptions
+time-series-descriptions
 performance-measures-website
 product-overview
 point-of-contact
@@ -55,9 +57,3 @@ data-quality-control-and-outlier-removal
 data-sources-and-code-2
 data-sources-2
 code-2
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-reading-the-table
-summary-group-descriptions
-time-series-descriptions
-primary-fishery
-primary-gearfishery
