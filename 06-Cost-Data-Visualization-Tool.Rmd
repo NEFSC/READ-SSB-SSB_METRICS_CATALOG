@@ -117,7 +117,7 @@ There were multiple areas in which data quality was assessed across all survey y
 ### Code
 Metric Creation Code File Location: Created on production side 
 Read Me file (file to run code): Created on production side 
-Website Production Code Location: https://github.com/NEFSC/READ-SSB-COST-DATA
+Website Production Code Location: https://github.com/NEFSC/READ-SSB-COST-DATA (Permissions Required)
 Read Me file (file to run code): N/A
 
 

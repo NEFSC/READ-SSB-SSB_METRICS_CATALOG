@@ -97,7 +97,7 @@ We are only using the average prices for trip records which didn't have a matchi
  Outlier removal is based on interquartile test
 *First, Lower (<=0.25) and Upper (>=0.75) Quartile and calculated. Then, the lower bound for determining an outlier is lq-1.5*(uq-lq), and the upper bound is uq+1.5*(uq-lq). Any values less than the lower bound or greater than the upper bound are removed.
 
-## Data Sources and code 
+## Data Sources and Code 
 
 ### Data Sources 
 CFDBS
@@ -107,9 +107,11 @@ SFCLAM
 ### Code
 Metric Creation Code File Location
 https://github.com/NEFSC/READ-SSB-PM
-Read Me file (file to run code): https://github.com/NEFSC/READ-SSB-PM\README.md 
+(Permissions required)
+Read Me file (file to run code): https://github.com/NEFSC/READ-SSB-PM\README.md (Permissions required)
 
-Website Production Code Location: https://github.com/NEFSC/READ-SSB-PM
+Website Production Code Location: https://github.com/NEFSC/READ-SSB-PM 
+(Permissions required)
 Read Me file (file to run code): https://github.com/NEFSC/READ-SSB-PM/blob/main/README.md
-
+(Permissions required)
 
