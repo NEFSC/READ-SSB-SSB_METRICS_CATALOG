@@ -1,0 +1,78 @@
+# Crew Survey Visualization Tool
+## Product Overview
+
+The Crew Survey Visualization Tool displays metrics collected from the Crew Survey, administered by the Social Sciences Branch of the NEFSC. The Crew Survey includes a variety of questions regarding the demographic background and commercial fishing activities of those employed as crew on commercial fishing vessels in the Northeast. Specifically, survey respondents are asked about their backgrounds, personal and family histories in commercial fishing, characteristics of their fishing experiences, satisfaction with various aspects of the job, and their views about the future of fisheries management and the future of the commercial fishing industry.
+
+* Unit: Crew Survey Participants 
+* Summary Group(s): N/A 
+* Frequency: Annual 
+* Time Series:  2012/13, 2018/19, 2023/24
+
+### Point of Contact
+ Matthew Cutler - Matthew.Cutler@noaa.gov 
+
+### Data Outputs/Outlets 
+[Crew Survey Data Visualization Tool ](https://apps-nefsc.fisheries.noaa.gov/crew-survey/)
+
+## List of metrics 
+* Primary Port
+* Primary Fishery Category
+* Age Category
+* Education
+* Race
+* Hispanic
+* Income
+* Health Insurance
+* Marital Status
+* Job Satisfaction
+* Years Fishing
+* Owner Operator
+* Position On Current Vessel
+* Advise Young
+* Fish Again If Life Lived Over
+* Fishing Is Just A Job
+* Considered Leaving Industry
+* Participated In Fisheries Management
+* Rules & Regulations Change Quickly
+* Fines Are Fair
+* Regulations Too Restrictive
+
+## Metric Descriptions
+* Primary Port: Write-in response to the question, “What port did you primarily work out of in the last year?”
+* Primary Fishery Category: Single-choice response to the latter half of the question, “What fisheries do you target? Of these, which do you consider your primary fishery in terms of income?” Responses are condensed into the four most frequently selected categories; 1) groundfish, 2) lobster, 3) scallop, and 4) all other fisheries.
+* Age Category: Write-in response to the question, “What is your age?” Responses are aggregated into five categories: 1) Under 25, 2) 25-34, 3) 35-44, 4) 45-54, 5) 55 or older.
+* Education: Single-choice response to the question, “Which category best describes the highest level of education that you have completed?”
+* Race: Single- or multi-choice response to the question, “Which racial category describes you?”
+* Hispanic: Single-choice response to the question, “Are you of Hispanic, Latino, or Spanish origin?"
+* Income: Single-choice response to the question, “What was your annual fishing income in the last year?” Responses are aggregated into five categories.
+* Health Insurance: A combination of two original survey questions: “Did you have health insurance in the last year,” and “Where did the insurance come from?”
+* Marital Status: Single-choice response to the question, “What is your marital status?”
+* Job Satisfaction: Single-choice response on a Likert-style scale of satisfaction with nine listed aspects of the job.
+* Years Fishing: Write-in response to the question, “How long have you been involved in commercial fishing?” Responses are aggregated into four categories.
+* Owner Operator: Single-choice response to the question, “Was the vessel you worked on most in the last year owner-operated?”
+* Position On Current Vessel: Single- or multi-choice response to the question, “What was your position on the vessel in the last year?”
+* Advise Young: Single-choice response to the question: “Would you advise a young person to enter fishing?”
+* Fish Again If Life Lived Over: Single-choice response to the question, “Would you still be a * commercial fisherman if you had your life to live over?”
+* Fishing Is Just A Job: Single-choice response on a Likert-style scale of agreement with the statement, “Fishing is just a job to me.”
+* Considered Leaving Industry: Single-choice response on a Likert-style scale of agreement with the statement, “Leaving the fishing industry is something that I have considered.”
+* Participated In Fisheries Management: Single-choice response to the question about participation in federal fisheries management.
+* Rules & Regulations Change Quickly: Single-choice response on a Likert-style scale of agreement with the statement, "The rules and regulations change so quickly it is hard to keep up."
+* Fines Are Fair: Single-choice response on a Likert-style scale of agreement with the statement about the fairness of fines.
+* Regulations Too Restrictive: Single-choice response on a Likert-style scale of agreement with the statement, "I feel that the regulations in my primary fishery are too restrictive."
+
+## Additional methods/decision rules 
+### Target Population & Sample Framework
+The target population for the Crew Survey consists of individuals who work as crew on commercial fishing vessels operating in the New England and Mid-Atlantic regions of the United States. Since there is no available database or registry of crew in the target regions, estimates of employment in commercial fishing are used to derive a sample size target for the region as a whole. Commercial fishing employment estimates used to calculate sample size come from three data sources: 1) Census Country Business Patterns; 2) Bureau of Labor Statistics Covered Employment and Wages; and 3) Bureau of Economic Analysis Regional Economic Accounts.
+### Survey Implementation & Intercept Methodology
+Although employment estimates, and therefore target sample sizes, vary somewhat from year to year, the sample targets generally range from 400-450 survey interviews each implementation. The actual samples vary more widely, with 356 completed surveys in 2012-2013, 478 in 2018-2019, and 162 in 2023-2024. The primary reason for such variation in the achieved sample size by survey wave is due to the survey modality, which is an intercept method by necessity. Since there is no contact information available for commercial fishing vessel crews, survey interviews must be conducted by random intercept at docks where commercial fishing vessel crews can be approached.
+### Port Selection & Sampling
+Since data collection involves an intercept method at docks where commercial fishing activity takes place, a random sample of fishing ports is selected from the universe of ports in the Northeast and Mid-Atlantic states. To ensure that the most active ports are selected, a probability proportional to size (PPS) sampling method is applied in order to purposely add weight in the selection process to ports with more fishing activity. Specifically, under a PPS approach a port's probability of being selected into the sample is related to the "size" of the port, with larger ports being more likely to be selected into the sample. Port size is assessed using a commercial fishing engagement index from the NOAA Fisheries Social Indicators.
+
+## Data Sources and code 
+### Data Sources 
+SSB Crew Survey Data (Flat files, accessible at \\nefscdata\SSB_Crew_Survey\Data\Complete Data)
+
+### Code
+* Metric Creation Code Files - https://github.com/NEFSC/READ-SSB-Crew-Survey
+* README file (file to run code):  https://github.com/NEFSC/READ-SSB-Crew-Survey/main/README.md
+

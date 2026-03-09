@@ -57,3 +57,17 @@ data-quality-control-and-outlier-removal
 data-sources-and-code-2
 data-sources-2
 code-2
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
+primary-fishery
+primary-gearfishery
+crew-survey-visualization-tool
+product-overview-3
+point-of-contact-3
+data-outputsoutlets-3
+list-of-metrics-3
+metric-descriptions-3
+additional-methodsdecision-rules-3
+target-population-sample-framework
+data-sources-and-code-3
+data-sources-3
+code-3
