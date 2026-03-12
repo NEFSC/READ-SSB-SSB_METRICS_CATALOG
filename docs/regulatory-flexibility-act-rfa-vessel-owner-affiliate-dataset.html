@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Regulatory Flexibility Act (RFA) Vessel Owner Affiliate Dataset | SSB Metrics Catalog</title>
+  <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Regulatory Flexibility Act (RFA) Vessel Owner Affiliate Dataset | SSB Metrics Catalog" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Regulatory Flexibility Act (RFA) Vessel Owner Affiliate Dataset | SSB Metrics Catalog" />
+  
+  <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
+  
+
+<meta name="author" content="A product of the SSB Data Working Group" />
+
+
+<meta name="date" content="2026-03-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="crew-survey-visualization-tool.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<img src="logo.png" style="width: 300px; height: 150px
+float: center margin-bottom: 100px margin-left:100px"/>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SSB METRICS CATALOG</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="index.html"><a href="index.html#using-the-ssb-metrics-index-table"><i class="fa fa-check"></i><b>1.0.1</b> Using the “SSB Metrics Index Table”</a></li>
+<li class="chapter" data-level="1.0.2" data-path="index.html"><a href="index.html#product-chapters"><i class="fa fa-check"></i><b>1.0.2</b> Product Chapters</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definitions"><i class="fa fa-check"></i><b>1.1</b> Definitions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html"><i class="fa fa-check"></i><b>2</b> SSB Metrics Index Table</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#reading-the-table"><i class="fa fa-check"></i><b>2.1</b> Reading the Table</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#table-columns"><i class="fa fa-check"></i><b>2.1.1</b> Table Columns</a></li>
+<li class="chapter" data-level="2.1.2" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#summary-group-descriptions"><i class="fa fa-check"></i><b>2.1.2</b> Summary Group Descriptions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="ssb-metrics-index-table.html"><a href="ssb-metrics-index-table.html#time-series-descriptions"><i class="fa fa-check"></i><b>2.1.3</b> Time Series Descriptions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="performance-measures-website.html"><a href="performance-measures-website.html"><i class="fa fa-check"></i><b>3</b> Performance Measures Website</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#product-overview"><i class="fa fa-check"></i><b>3.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#point-of-contact"><i class="fa fa-check"></i><b>3.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="3.1.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-outputsoutlets"><i class="fa fa-check"></i><b>3.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#list-of-metrics"><i class="fa fa-check"></i><b>3.2</b> List of Metrics</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics"><i class="fa fa-check"></i><b>3.2.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.2.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-level-metrics"><i class="fa fa-check"></i><b>3.2.2</b> FMP-level Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#metric-descriptions"><i class="fa fa-check"></i><b>3.3</b> Metric Descriptions</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#all-ne-fmp-plans-combined-metrics-1"><i class="fa fa-check"></i><b>3.3.1</b> All NE FMP plans combined metrics</a></li>
+<li class="chapter" data-level="3.3.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#fmp-specific-metrics"><i class="fa fa-check"></i><b>3.3.2</b> FMP-Specific Metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#additional-methodsdecision-rules"><i class="fa fa-check"></i><b>3.4</b> Additional Methods/Decision Rules</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#summary-group-decision-rules"><i class="fa fa-check"></i><b>3.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="3.4.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#deflation"><i class="fa fa-check"></i><b>3.4.2</b> Deflation</a></li>
+<li class="chapter" data-level="3.4.3" data-path="performance-measures-website.html"><a href="performance-measures-website.html#matching-trips-veslog---cfders"><i class="fa fa-check"></i><b>3.4.3</b> Matching Trips (veslog - cfders)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="performance-measures-website.html"><a href="performance-measures-website.html#binning-rules"><i class="fa fa-check"></i><b>3.4.4</b> Binning Rules</a></li>
+<li class="chapter" data-level="3.4.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#average-prices"><i class="fa fa-check"></i><b>3.4.5</b> Average Prices</a></li>
+<li class="chapter" data-level="3.4.6" data-path="performance-measures-website.html"><a href="performance-measures-website.html#exclusions"><i class="fa fa-check"></i><b>3.4.6</b> Exclusions</a></li>
+<li class="chapter" data-level="3.4.7" data-path="performance-measures-website.html"><a href="performance-measures-website.html#outliers"><i class="fa fa-check"></i><b>3.4.7</b> Outliers</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources-and-code"><i class="fa fa-check"></i><b>3.5</b> Data Sources and Code</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="performance-measures-website.html"><a href="performance-measures-website.html#data-sources"><i class="fa fa-check"></i><b>3.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="3.5.2" data-path="performance-measures-website.html"><a href="performance-measures-website.html#code"><i class="fa fa-check"></i><b>3.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html"><i class="fa fa-check"></i><b>4</b> 2022 Vessel Profit Snapshot Website</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#product-overview-1"><i class="fa fa-check"></i><b>4.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#point-of-contact-1"><i class="fa fa-check"></i><b>4.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="4.1.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-outputsoutlets-1"><i class="fa fa-check"></i><b>4.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#list-of-metrics-1"><i class="fa fa-check"></i><b>4.2</b> List of Metrics</a></li>
+<li class="chapter" data-level="4.3" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#metric-descriptions-1"><i class="fa fa-check"></i><b>4.3</b> Metric Descriptions</a></li>
+<li class="chapter" data-level="4.4" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#additional-methodsdecision-rules-1"><i class="fa fa-check"></i><b>4.4</b> Additional Methods/Decision Rules</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#summary-group-decision-rules-1"><i class="fa fa-check"></i><b>4.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="4.4.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#depreciation"><i class="fa fa-check"></i><b>4.4.2</b> Depreciation</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-and-code-1"><i class="fa fa-check"></i><b>4.5</b> Data Sources and Code</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#data-sources-1"><i class="fa fa-check"></i><b>4.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="4.5.2" data-path="vessel-profit-snapshot-website.html"><a href="vessel-profit-snapshot-website.html#code-1"><i class="fa fa-check"></i><b>4.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html"><i class="fa fa-check"></i><b>5</b> Cost Data Visualization Tool</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#product-overview-2"><i class="fa fa-check"></i><b>5.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#point-of-contact-2"><i class="fa fa-check"></i><b>5.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="5.1.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-outputsoutlets-2"><i class="fa fa-check"></i><b>5.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#list-of-metrics-2"><i class="fa fa-check"></i><b>5.2</b> List of Metrics</a></li>
+<li class="chapter" data-level="5.3" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#metric-descriptions-2"><i class="fa fa-check"></i><b>5.3</b> Metric Descriptions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#sub-cost-categories"><i class="fa fa-check"></i><b>5.3.1</b> Sub-cost categories</a></li>
+<li class="chapter" data-level="5.3.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#major-cost-categories"><i class="fa fa-check"></i><b>5.3.2</b> Major cost categories</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#additional-methodsdecision-rules-2"><i class="fa fa-check"></i><b>5.4</b> Additional Methods/Decision Rules</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#summary-group-decision-rules-2"><i class="fa fa-check"></i><b>5.4.1</b> Summary Group Decision Rules</a></li>
+<li class="chapter" data-level="5.4.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-quality-control-and-outlier-removal"><i class="fa fa-check"></i><b>5.4.2</b> Data Quality Control and Outlier Removal</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-sources-and-code-2"><i class="fa fa-check"></i><b>5.5</b> Data Sources and Code</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#data-sources-2"><i class="fa fa-check"></i><b>5.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="5.5.2" data-path="cost-data-visualization-tool.html"><a href="cost-data-visualization-tool.html#code-2"><i class="fa fa-check"></i><b>5.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html"><i class="fa fa-check"></i><b>6</b> Crew Survey Visualization Tool</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#product-overview-3"><i class="fa fa-check"></i><b>6.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#point-of-contact-3"><i class="fa fa-check"></i><b>6.1.1</b> Point of Contact</a></li>
+<li class="chapter" data-level="6.1.2" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#data-outputsoutlets-3"><i class="fa fa-check"></i><b>6.1.2</b> Data Outputs/Outlets</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#list-of-metrics-3"><i class="fa fa-check"></i><b>6.2</b> List of metrics</a></li>
+<li class="chapter" data-level="6.3" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#metric-descriptions-3"><i class="fa fa-check"></i><b>6.3</b> Metric Descriptions</a></li>
+<li class="chapter" data-level="6.4" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#additional-methodsdecision-rules-3"><i class="fa fa-check"></i><b>6.4</b> Additional methods/decision rules</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#target-population-sample-framework"><i class="fa fa-check"></i><b>6.4.1</b> Target Population &amp; Sample Framework</a></li>
+<li class="chapter" data-level="6.4.2" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#survey-implementation-intercept-methodology"><i class="fa fa-check"></i><b>6.4.2</b> Survey Implementation &amp; Intercept Methodology</a></li>
+<li class="chapter" data-level="6.4.3" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#port-selection-sampling"><i class="fa fa-check"></i><b>6.4.3</b> Port Selection &amp; Sampling</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#data-sources-and-code-3"><i class="fa fa-check"></i><b>6.5</b> Data Sources and code</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#data-sources-3"><i class="fa fa-check"></i><b>6.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="6.5.2" data-path="crew-survey-visualization-tool.html"><a href="crew-survey-visualization-tool.html#code-3"><i class="fa fa-check"></i><b>6.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><i class="fa fa-check"></i><b>7</b> Regulatory Flexibility Act (RFA) Vessel Owner Affiliate Dataset</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#product-overview-4"><i class="fa fa-check"></i><b>7.1</b> Product Overview</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#point-of-contact-4"><i class="fa fa-check"></i><b>7.1.1</b> Point of Contact</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#list-of-metrics-4"><i class="fa fa-check"></i><b>7.2</b> List of metrics</a></li>
+<li class="chapter" data-level="7.3" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#metric-descriptions-4"><i class="fa fa-check"></i><b>7.3</b> Metric Descriptions</a></li>
+<li class="chapter" data-level="7.4" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#additional-methodsdecision-rules-4"><i class="fa fa-check"></i><b>7.4</b> Additional methods/decision rules</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#updates"><i class="fa fa-check"></i><b>7.4.1</b> Updates</a></li>
+<li class="chapter" data-level="7.4.2" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-overview"><i class="fa fa-check"></i><b>7.4.2</b> Data Overview</a></li>
+<li class="chapter" data-level="7.4.3" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#dollar-values"><i class="fa fa-check"></i><b>7.4.3</b> Dollar Values</a></li>
+<li class="chapter" data-level="7.4.4" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#warnings"><i class="fa fa-check"></i><b>7.4.4</b> Warnings</a></li>
+<li class="chapter" data-level="7.4.5" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#additional-metadata"><i class="fa fa-check"></i><b>7.4.5</b> Additional Metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-sources-and-code-4"><i class="fa fa-check"></i><b>7.5</b> Data Sources and code</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-sources-4"><i class="fa fa-check"></i><b>7.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="7.5.2" data-path="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"><a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#code-4"><i class="fa fa-check"></i><b>7.5.2</b> Code</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SSB Metrics Catalog</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Regulatory Flexibility Act (RFA) Vessel Owner Affiliate Dataset<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This file presents metrics by “affiliate”, which comprise business “entities”. These data are assembled for analysis required by the Regulatory Flexibility Act. Fishing vessels (permits) are linked together, an industry determination is made, and firms are classified as small or large based on SBA guidelines. Per SBA guidelines, we use revenue data in a single year to make the industry determination. Per SBA guidelines, we use 5 year trailing average to make the “small” determination.</p>
+<div id="product-overview-4" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Product Overview<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#product-overview-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Unit:
+Affiliate</li>
+<li>Summary Group(s):
+N/A</li>
+<li>Frequency:
+Annual</li>
+<li>Time Series:<br />
+Most recent year (information lagged over five years to create groups)</li>
+</ul>
+<div id="point-of-contact-4" class="section level3 hasAnchor" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Point of Contact<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#point-of-contact-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Min-Yang Lee (<a href="mailto:Min-Yang.Lee@noaa.gov" class="email">Min-Yang.Lee@noaa.gov</a>)
+### Data Outputs/Outlets
+Data is not hosted on a website but the dataset is stored on the socialsci share drive at : \nefscfile_EO12866_GuidelinesData. There, you will find current data, archived data, and background information.</p>
+</div>
+</div>
+<div id="list-of-metrics-4" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> List of metrics<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#list-of-metrics-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>affiliate_id</li>
+<li>year</li>
+<li>count_permits</li>
+<li>entity_type_YYYY-1</li>
+<li>small_business</li>
+<li>permit</li>
+<li>affiliate_total</li>
+<li>affiliate_fish</li>
+<li>affiliate_forhire</li>
+<li>value_permit</li>
+<li>value_permit_forhire</li>
+<li>valueNNN</li>
+<li>person_idY</li>
+<li>PLAN_CAT</li>
+</ul>
+</div>
+<div id="metric-descriptions-4" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Metric Descriptions<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#metric-descriptions-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>affiliate_id</td>
+<td>float</td>
+<td>Key that identifies an entity in this dataset. Not consistent across data vintages. See Warning 3 below.</td>
+</tr>
+<tr class="even">
+<td>year</td>
+<td>int</td>
+<td>Calendar year corresponding to revenue and value columns.</td>
+</tr>
+<tr class="odd">
+<td>count_permits</td>
+<td>byte</td>
+<td>Number of distinct permits owned by an entity in year YYYY.</td>
+</tr>
+<tr class="even">
+<td>entity_type_<em>YYYY-1</em></td>
+<td>string7</td>
+<td>The type of entity (“FISHING”, “FORHIRE”, “NO_REV”) based on the source majority of revenues in the previous year. If a firm had zero revenues in year YYYY-1, then it is classified as “NO_REV”</td>
+</tr>
+<tr class="odd">
+<td>small_business</td>
+<td>byte</td>
+<td>=1 if a firms is a small business, =0 otherwise.</td>
+</tr>
+<tr class="even">
+<td>permit</td>
+<td>long</td>
+<td>permit number</td>
+</tr>
+<tr class="odd">
+<td>affiliate_total</td>
+<td>float</td>
+<td>total revenues for the affiliate in a year</td>
+</tr>
+<tr class="even">
+<td>affiliate_fish</td>
+<td>float</td>
+<td>commercial fishing revenues for the affiliate in a year</td>
+</tr>
+<tr class="odd">
+<td>affiliate_forhire</td>
+<td>float</td>
+<td>for-hire revenues for the affiliate in a year</td>
+</tr>
+<tr class="even">
+<td>value_permit</td>
+<td>float</td>
+<td>value of revenues, all sources, for the <strong>permit</strong> in a year</td>
+</tr>
+<tr class="odd">
+<td>value_permit_forhire</td>
+<td>float</td>
+<td>value of for-hire revenues for the <strong>permit</strong> in a year</td>
+</tr>
+<tr class="even">
+<td>value<em>NNNNNN</em></td>
+<td>float</td>
+<td>value of commercial revenues for the <strong>permit</strong> in a year from the ITIS_TSN code NNNNNN</td>
+</tr>
+<tr class="odd">
+<td>person_id<em>Y</em></td>
+<td>int</td>
+<td>The person_id of an owner. For a row of data, these are arranged in increasing order of person_id</td>
+</tr>
+<tr class="even">
+<td>PLAN_CAT</td>
+<td>byte</td>
+<td>=1 if a vessel held a permit of “PLAN” and “CAT”, =0 otherwise</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="additional-methodsdecision-rules-4" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Additional methods/decision rules<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#additional-methodsdecision-rules-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="updates" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Updates<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#updates" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We run this code to provide data once a year, just after June 1st. If critical bugs are found, we will fix and update.</p>
+</div>
+<div id="data-overview" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Data Overview<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-overview" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Each row contains an observation of a permit-year. Permits are grouped together through common ownership; vessels with identical owners have the same affiliate_id. There are three affiliate level columns: <em>affiliate_total</em>, <em>affiliate_fish</em>, and <em>affiliate_forhire</em> revenue. These columns contain the aggregate revenue, commercial fishing revenue, and for-hire revenue for the firm. The following table is an example:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>affiliate_id</th>
+<th>year</th>
+<th>count_permits</th>
+<th>entity_type_YYYY-1</th>
+<th>small_business</th>
+<th>permit</th>
+<th>affiliate_total</th>
+<th>affiliate_fish</th>
+<th>value_permit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2017</td>
+<td>1</td>
+<td>FISHING</td>
+<td>1</td>
+<td>999999</td>
+<td>1675310</td>
+<td>1675310</td>
+<td>1675310</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>2018</td>
+<td>1</td>
+<td>FISHING</td>
+<td>1</td>
+<td>999999</td>
+<td>1625835</td>
+<td>1625835</td>
+<td>1625835</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>2019</td>
+<td>1</td>
+<td>FISHING</td>
+<td>1</td>
+<td>999999</td>
+<td>1725104</td>
+<td>1725104</td>
+<td>1725104</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2017</td>
+<td>2</td>
+<td>FISHING</td>
+<td>1</td>
+<td>111111</td>
+<td><strong>2830508</strong></td>
+<td><strong>2830508</strong></td>
+<td><em>1240510</em></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>2017</td>
+<td>2</td>
+<td>FISHING</td>
+<td>1</td>
+<td>222222</td>
+<td><strong>2830508</strong></td>
+<td><strong>2830508</strong></td>
+<td><em>1589998</em></td>
+</tr>
+</tbody>
+</table>
+<p>We use permit and ownership data from the current year (<strong>ap_year= YYYY</strong>) to link together permits into firms. We use permit holdings on <strong>June 1</strong> of the <strong>current year</strong> to construct the PLAN_CAT variables. These take on the value of “1” if a permit held a <strong>PLAN_CAT</strong> and 0 otherwise. These may be useful to quickly determine if an entity is regulated. We use dealer plus clam processor report data from years <strong>YYYY-5</strong> through year <strong>YYYY-1</strong> to construct commercial revenues. VTR data combined with recreational survey data are used to construct for-hire revenues.</p>
+<p>Analysis required by the Regulatory Flexibility Act should use the Affiliate_id, year, and permit fields to correctly group fishing vessels into entities. All other data is provided as a convenience.</p>
+<p>The firm is classified as a Commercial Fishing (“FISHING”), For-Hire (“FORHIRE”), or “NO_REV” based on the breakdown of revenues <strong>in year YYYY</strong>.</p>
+</div>
+<div id="dollar-values" class="section level3 hasAnchor" number="7.4.3">
+<h3><span class="header-section-number">7.4.3</span> Dollar Values<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#dollar-values" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>All revenue and value figures are in nominal terms.</p>
+</div>
+<div id="warnings" class="section level3 hasAnchor" number="7.4.4">
+<h3><span class="header-section-number">7.4.4</span> Warnings<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#warnings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><p>Do not sum the affiliate revenue variables. You will not get the total revenues. If you want aggregate revenues for a fleet, you should either:</p>
+<ol style="list-style-type: decimal">
+<li>Retain only the distinct AFFILIATE_ID and YEAR entries and SUM the affiliate revenue columns, or</li>
+<li>Sum the value_permit, value_permit_forhire, or valueSSS columns</li>
+</ol></li>
+<li><p>There is no guarantee that permits that were affiliated in a particular year were also affiliated in previous years.<br />
+For example, the fact that permits 123 and 456 were affiliated in 2013, does not imply that they were affiliated in 2012.</p></li>
+<li><p>Once a group of permits is affiliated together, revenues for the trailing 5 years are combined and aggregated.<br />
+For example, if permits 123 and 456 were affiliated in 2022 but not from 2017-2021, the revenues for 123 and 456 across the 2017-2021 period averaged when making a SBA size determination. This is consistent with current SBA guidance.</p></li>
+<li><p>When the dataset is generated for subsequent years, the affiliate id variables will change. For example if permits 123 and 456 were affiliate_id =3 in 2021, that same grouping (if it even exists) is likely to have a different value of affiliate_id in 2022. This is probably fine for RFA purposes.</p></li>
+<li><p>If a business is owned by another business, you won’t see the people in the company in bus_own. The people in this situation are one or more levels below the first owner record and thus don’t show up in bus_own. We don’t have many businesses like this, but there are few. This means that the dataset does not combine as many firms as it should. Therefore, there are probably more firms and small firms that in reality.</p></li>
+<li><p>The YYYY-1 part of Entity_type_YYYY-1 is slightly confusing.</p></li>
+</ol>
+</div>
+<div id="additional-metadata" class="section level3 hasAnchor" number="7.4.5">
+<h3><span class="header-section-number">7.4.5</span> Additional Metadata<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#additional-metadata" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Additional metadata on running the code is found here: <a href="https://github.com/NEFSC/READ-SSB-Lee-RFAdataset/blob/edc226a46fca1482ec0238c31e06a2f3da03309c/documentation/output_documentation/output_data_description.md" class="uri">https://github.com/NEFSC/READ-SSB-Lee-RFAdataset/blob/edc226a46fca1482ec0238c31e06a2f3da03309c/documentation/output_documentation/output_data_description.md</a></p>
+</div>
+</div>
+<div id="data-sources-and-code-4" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> Data Sources and code<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-sources-and-code-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-sources-4" class="section level3 hasAnchor" number="7.5.1">
+<h3><span class="header-section-number">7.5.1</span> Data Sources<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#data-sources-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>VTR
+CFDBS
+PERMITS</p>
+</div>
+<div id="code-4" class="section level3 hasAnchor" number="7.5.2">
+<h3><span class="header-section-number">7.5.2</span> Code<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html#code-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Code for generating the dataset found here:
+<a href="https://github.com/NEFSC/READ-SSB-Lee-RFAdataset" class="uri">https://github.com/NEFSC/READ-SSB-Lee-RFAdataset</a>
+Readme file associated with running the code: N/A</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="crew-survey-visualization-tool.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
