@@ -1,0 +1,158 @@
+# Trip Cost Model Estimates 
+
+## Product Overview
+A Heckman selection model is used to estimate a composite trip cost variable for all federal commercial trips from 2000-2024.
+
+* **Unit:** Trip (all federal commercial fishing trips).
+* **Summary Group(s):** N/A.
+* **Frequency:** Annual.
+* **Time Series:** 2000-2024 (Updated for the past full year in Fall-Winter of the current year).
+
+### Point of Contact
+Samantha Werner (Samantha.Werner@noaa.gov).
+
+### Data Outputs/Outlets 
+Primary source for unbiased trip cost estimates for the commercial fishing fleet. Used by branch, council staff, and others for net-revenue analyses and cost explorations. The data are hosted within the SSB network drive.
+
+## List of Metrics 
+
+* CAMSID
+* YEAR
+* TRIP_COST_2024_DOL
+* TRIP_COST_WINSOR_2024_DOL
+* OBSERVED_COST_DUMMY
+* TRIP_COST_NOMINALDOLS
+* TRIP_COST_NOMINALDOLS_WINSOR
+
+## Metric Descriptions
+
+| Variable Name | Description |
+|:---|:---|
+| **CAMSID** | CAMS trip identification number. |
+| **YEAR** | YEAR associated with the CAMSID record within the CAMS_LAND table. |
+| **TRIP_COST_2024_DOL** | Estimated and reported trip costs in 2024 constant U.S. dollars. Composite variable includes: fuel, ice, bait, food/groceries, water, oil, and supplies. |
+| **TRIP_COST_WINSOR_2024_DOL** | Estimated and reported trip costs in 2024 constant U.S. dollars, winsorized at the 1st and 99th percentiles. |
+| **OBSERVED_COST_DUMMY** | Indicator variable of whether or not the trip had costs recorded by an onboard observer (0 = unobserved, 1 = observed). |
+| **TRIP_COST_NOMINALDOLS** | Estimated and reported trip costs in nominal U.S. dollars. |
+| **TRIP_COST_NOMINALDOLS_WINSOR** | Estimated and reported trip costs in nominal U.S. dollars, winsorized at the 1st and 99th percentiles. |
+
+## Additional Methods and Decision Rules 
+
+### General Information
+There are two datasets: 2000-2009 and 2010-2024. The first dataset for the early 2000s is static, while the latter is re-run annually to include new data. These differences exist because of changes in the SBRM stratification between the two time periods.
+
+### Trip Costs
+* **Composition:** Trip costs are presented as a composite variable including: fuel, ice, bait, food/groceries, water, oil, and supplies.
+* **Observed Values:** If a trip cost was observed, that actual value is contained in the dataset rather than a prediction.
+
+### Dollar Values
+Trip costs are presented in both nominal and deflated values adjusted to the most recent year in the time series (e.g., 2024 dollars).
+
+### Heckman Modeling Notes
+
+#### Background and Justification
+Commercial fishing variable costs are collected on a subset of trips via the Northeast Observer Program (NEFOP) and At-sea Monitoring (ASM). Because these programs prioritize biological data, cost estimates may suffer from selection bias. Heckman Selection models are used to simultaneously test and correct for this bias. Research shows that Ordinary Least Squares (OLS) and Heckman model predictions can differ significantly, particularly at the sub-fleet level.
+
+Here is the updated R Markdown (.Rmd) content. I have incorporated Sections V through VIII from the document, maintaining the level 4 (####) header structure and ensuring all technical details (like the Heckman Selection criteria and Winsorization process) are clearly defined for your report.
+
+#### IV. Database Generation
+The project database was compiled using information from two main sources: (i) vessel trip reports derived from CAMS data and (ii) observer data containing realized trip cost information. Estimates were calculated for all commercial (REC=0), federal (PERMIT_STATE_FED="FEDERAL") CAMS trips which had a valid date sail and land (RECORD_SAIL and RECORD_LAND) accomplished during 2010-2024.
+
+* **Data Merging**: Observer records (NEFOP & ASM) containing trip cost information were merged into the CAMS dataset. This was achieved using a hierarchical matching algorithm based on the vessel hull number, gear type, fishing area, and record sailed/landed.
+* **Fleet Classification**: Trips were coded into SBRM fleet types according to a cumulative SBRM definition of the fishing fleet classifications. Gear, region of departure, and mesh size from the CAMS record were used to identify each trip's respective SBRM fleet type.
+* **Sector Affiliation**: Groundfish sector affiliations (Sector IDs) were obtained from the Moratorium Qualification Review System (MQRS) database and merged using vessel permit numbers and year variables.
+* **Secondary Sources**: Average weekly wages of marina workers were retrieved from the Bureau of Labor Statistics. Daily New York Harbor diesel prices (Ultra-Low-Sulfur No. 2) were sourced from Federal Reserve Economic Data (DDFUELNYH).
+* **Vessel Characteristics**: Vessel characteristics, including age, horsepower, and gross tons, were retrieved from the Permit database.
+
+#### V. Model Types: Gears and Trip Durations
+After generating the project database, the primary gear for each trip (NEGEAR) was identified using the gear associated with the largest quantity (lbs.) of species kept on the trip. Trips were then grouped into general gear categories believed to have similar cost functions: Trawl, Gillnet, Dredge, Longline, Seine, Pots and Traps, and Handlines/Handgear/Other Gear.
+
+* **Trip Durations**: Where possible, gear groups were further split into day trips (≤24 hours) and multiday trips (>24 hours).
+* **Statistical Validation**: Chow tests were employed to assess the existence of structural breaks; results suggest significant differences ($\alpha=0.01$) in model coefficients when comparing the two trip durations and various gear-type models.
+* **Model Consolidation**: In cases where gear types had limited observed trips, the day and multiday trips were estimated as a single model with a dummy variable to control for duration.
+
+##### i. Models and Variables
+The Heckman Selection model depends on an underlying linear regression and a selection equation comprised of variables driving selection bias.
+
+* **Model Choice**: In cases where the Heckman Selection model fails to reject the null hypothesis ($\rho=0$), an OLS model was used to estimate costs.
+* **Dependent Variable**: The dependent variable is the natural log of a composite trip cost variable (fuel, ice, bait, food/groceries, water, oil, and supplies) presented in 2024 constant dollars.
+
+| Independent Variable | Description | Units | Model Type* |
+|:---|:---|:---|:---|
+| **Ln Vessel Horse Power** | Natural log of vessel engine horsepower. | kW | OLS, H, HS |
+| **Ln Vessel Gross Tons** | Natural log of vessel weight in gross metric tons. | Tons | OLS, H, HS |
+| **Ln Vessel Age** | Natural log of vessel age (built date to 2024). | Years | OLS, H, HS |
+| **Ln Hours Absent** | Natural log of hours absent from port during a trip. | Hours | OLS, H, HS |
+| **Ln Diesel Price** | Natural log of NY Harbor diesel price in 2024 constant dollars. | \$/Gallon | OLS, H, HS |
+| **Average Weekly Wage** | Natural log of marina worker wages by state in 2024 constant dollars. | \$/Week | OLS, H, HS |
+| **Seasonal Quarter** | Categorical variable for the season of trip commencement (Q1-Q4). | Categorical | OLS, H, HS |
+| **Calendar Year** | Calendar year in which the fishing trip was completed. | Categorical | OLS, H, HS |
+| **SBRM Fleet Type** | Categorizes trips by gear, region, access, and mesh size for stratification. | Categorical | HS |
+| **Groundfish Sector ID** | Categorical variable for sector affiliation, common pool, or neither. | Categorical | HS** |
+| **Ln Number of Observers** | Natural log of onboard observers employed during the trip month. | Numeric | HS |
+
+**Table 1 Notes:**
+* *O=OLS, H=Heckman Selection (Trip cost regression), HS=Heckman Selection (Selection Equation).
+* **Groundfish Sector IDs are only used in gear models subject to groundfish monitoring.
+
+##### ii. Model Dollar Values
+All variables were adjusted to 2024 constant US dollars using the GDP implicit price deflator to control for inflation within the model.
+
+##### iii. Clustered Standard Errors
+Robust standard errors were used to address heteroscedasticity, identified using the Breusch-Pagan/Cook-Weisberg Test, in all Heckman and OLS models.
+
+##### iv. Selection Bias and Trip Cost Predictions
+The following table outlines the model choice for 2010-2024 predictions based on the Wald Test of Independent Equations.
+
+| Gear Type | Trip Duration | No. Observed Trips | Wald Test ($P>\chi^2$) | Model Used |
+|:---|:---|:---|:---|:---|
+| **Trawl** | Day | 15,959 | 0.2991 | OLS |
+| **Trawl** | Multiday | 13,689 | 0.000 | Heckman Selection |
+| **Gillnet** | Day | 15,864 | 0.000 | Heckman Selection |
+| **Gillnet** | Multiday | 2,203 | 0.000 | Heckman Selection |
+| **Longline** | All Trips | 942 | 0.000 | Heckman Selection |
+| **Dredge** | Day | 1,739 | 0.6341 | OLS |
+| **Dredge** | Multiday | 5,040 | 0.000 | Heckman Selection |
+| **Pots and Traps** | All Trips | 487 | 0.00 (32.27) | Heckman Selection |
+| **Seine** | All Trips | 474 | 0.000 (37.79) | Heckman Selection |
+| **Handline/Other** | All Trips | 474 | 0.3147 (1.01) | OLS |
+
+#### VI. Retransformation Process
+As the independent variable (trip cost) was log-transformed for modeling purposes, Duan’s smearing estimate (1983) was used as a non-parametric retransformation process post-trip cost prediction.
+
+#### VII. Data Cleaning
+Specific rules were applied to handle missing or zero values during the creation of the composite trip cost variable:
+
+* **Fuel Price**: The average annual fuel price was used for any trip reporting a fuel price $\le 0$ (~10% of records).
+* **Fuel Gallons**: Records reporting fuel gallons $\le 0$ were replaced with a predicted value based on hourly trip duration.
+* **Ice**: The mean annual ice price was used if the price was missing but a positive value for ice tons was reported.
+* **Missing Values**: All other missing values were interpreted as a zero cost.
+* **Duration**: If reported CAMS hours were $\le 0$, the median hourly trip duration value was used for prediction.
+
+#### VIII. Outliers
+Outliers were addressed during multiple stages of the modeling and prediction process:
+
+* **Sub-category Winsorization**: Each of the seven trip cost sub-categories was winsorized individually prior to generating the composite trip cost variable.
+* **Composite Winsorization**: The composite trip cost value was winsorized by gear and trip duration prior to modeling.
+* **Duration Capping**: Trips reporting durations less than 12 minutes or more than 20 hours were removed from the modeling stage.
+* **Prediction Forms**: Costs are presented in both winsorized and raw forms. Winsorization replaces values less than the 1st or greater than the 99th percentile with the 1st and 99th percentile values, respectively.
+
+
+## Data Sources and code 
+### Data Sources 
+Internal
+Observer / ASM
+Permit
+CAMS
+
+External
+
+Daily average Diesel prices from FRED ( DDFUELNYH,) 
+National Marina Wage data from https://www.bls.gov/cew/downloadable-data-files.htm
+
+### Code
+Code located on GitHub at: https://github.com/SWerner2/Trip_costs (permission required) 
+Readme - https://github.com/SWerner2/Trip_costs/blob/main/README.md 
+
+
+

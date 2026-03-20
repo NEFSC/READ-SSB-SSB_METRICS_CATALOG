@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | SSB Metrics Catalog</title>
+  <title>Chapter 8 Trip Cost Model Estimates | SSB Metrics Catalog</title>
   <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | SSB Metrics Catalog" />
+  <meta property="og:title" content="Chapter 8 Trip Cost Model Estimates | SSB Metrics Catalog" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | SSB Metrics Catalog" />
+  <meta name="twitter:title" content="Chapter 8 Trip Cost Model Estimates | SSB Metrics Catalog" />
   
   <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -251,18 +251,421 @@ float: center margin-bottom: 100px margin-left:100px"/>
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="trip-cost-model-estimates" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Trip Cost Model Estimates<a href="trip-cost-model-estimates.html#trip-cost-model-estimates" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="product-overview-5" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Product Overview<a href="trip-cost-model-estimates.html#product-overview-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A Heckman selection model is used to estimate a composite trip cost variable for all federal commercial trips from 2000-2024.</p>
+<ul>
+<li><strong>Unit:</strong> Trip (all federal commercial fishing trips).</li>
+<li><strong>Summary Group(s):</strong> N/A.</li>
+<li><strong>Frequency:</strong> Annual.</li>
+<li><strong>Time Series:</strong> 2000-2024 (Updated for the past full year in Fall-Winter of the current year).</li>
+</ul>
+<div id="point-of-contact-5" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Point of Contact<a href="trip-cost-model-estimates.html#point-of-contact-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Samantha Werner (<a href="mailto:Samantha.Werner@noaa.gov" class="email">Samantha.Werner@noaa.gov</a>).</p>
+</div>
+<div id="data-outputsoutlets-5" class="section level3 hasAnchor" number="8.1.2">
+<h3><span class="header-section-number">8.1.2</span> Data Outputs/Outlets<a href="trip-cost-model-estimates.html#data-outputsoutlets-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Primary source for unbiased trip cost estimates for the commercial fishing fleet. Used by branch, council staff, and others for net-revenue analyses and cost explorations. The data are hosted within the SSB network drive.</p>
+</div>
+</div>
+<div id="list-of-metrics-5" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> List of Metrics<a href="trip-cost-model-estimates.html#list-of-metrics-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>CAMSID</li>
+<li>YEAR</li>
+<li>TRIP_COST_2024_DOL</li>
+<li>TRIP_COST_WINSOR_2024_DOL</li>
+<li>OBSERVED_COST_DUMMY</li>
+<li>TRIP_COST_NOMINALDOLS</li>
+<li>TRIP_COST_NOMINALDOLS_WINSOR</li>
+</ul>
+</div>
+<div id="metric-descriptions-5" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Metric Descriptions<a href="trip-cost-model-estimates.html#metric-descriptions-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>CAMSID</strong></td>
+<td align="left">CAMS trip identification number.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>YEAR</strong></td>
+<td align="left">YEAR associated with the CAMSID record within the CAMS_LAND table.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>TRIP_COST_2024_DOL</strong></td>
+<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars. Composite variable includes: fuel, ice, bait, food/groceries, water, oil, and supplies.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TRIP_COST_WINSOR_2024_DOL</strong></td>
+<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>OBSERVED_COST_DUMMY</strong></td>
+<td align="left">Indicator variable of whether or not the trip had costs recorded by an onboard observer (0 = unobserved, 1 = observed).</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TRIP_COST_NOMINALDOLS</strong></td>
+<td align="left">Estimated and reported trip costs in nominal U.S. dollars.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>TRIP_COST_NOMINALDOLS_WINSOR</strong></td>
+<td align="left">Estimated and reported trip costs in nominal U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="additional-methods-and-decision-rules" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Additional Methods and Decision Rules<a href="trip-cost-model-estimates.html#additional-methods-and-decision-rules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="general-information" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> General Information<a href="trip-cost-model-estimates.html#general-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are two datasets: 2000-2009 and 2010-2024. The first dataset for the early 2000s is static, while the latter is re-run annually to include new data. These differences exist because of changes in the SBRM stratification between the two time periods.</p>
+</div>
+<div id="trip-costs" class="section level3 hasAnchor" number="8.4.2">
+<h3><span class="header-section-number">8.4.2</span> Trip Costs<a href="trip-cost-model-estimates.html#trip-costs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Composition:</strong> Trip costs are presented as a composite variable including: fuel, ice, bait, food/groceries, water, oil, and supplies.</li>
+<li><strong>Observed Values:</strong> If a trip cost was observed, that actual value is contained in the dataset rather than a prediction.</li>
+</ul>
+</div>
+<div id="dollar-values-1" class="section level3 hasAnchor" number="8.4.3">
+<h3><span class="header-section-number">8.4.3</span> Dollar Values<a href="trip-cost-model-estimates.html#dollar-values-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Trip costs are presented in both nominal and deflated values adjusted to the most recent year in the time series (e.g., 2024 dollars).</p>
+</div>
+<div id="heckman-modeling-notes" class="section level3 hasAnchor" number="8.4.4">
+<h3><span class="header-section-number">8.4.4</span> Heckman Modeling Notes<a href="trip-cost-model-estimates.html#heckman-modeling-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="background-and-justification" class="section level4 hasAnchor" number="8.4.4.1">
+<h4><span class="header-section-number">8.4.4.1</span> Background and Justification<a href="trip-cost-model-estimates.html#background-and-justification" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Commercial fishing variable costs are collected on a subset of trips via the Northeast Observer Program (NEFOP) and At-sea Monitoring (ASM). Because these programs prioritize biological data, cost estimates may suffer from selection bias. Heckman Selection models are used to simultaneously test and correct for this bias. Research shows that Ordinary Least Squares (OLS) and Heckman model predictions can differ significantly, particularly at the sub-fleet level.</p>
+<p>Here is the updated R Markdown (.Rmd) content. I have incorporated Sections V through VIII from the document, maintaining the level 4 (####) header structure and ensuring all technical details (like the Heckman Selection criteria and Winsorization process) are clearly defined for your report.</p>
+</div>
+<div id="iv.-database-generation" class="section level4 hasAnchor" number="8.4.4.2">
+<h4><span class="header-section-number">8.4.4.2</span> IV. Database Generation<a href="trip-cost-model-estimates.html#iv.-database-generation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The project database was compiled using information from two main sources: (i) vessel trip reports derived from CAMS data and (ii) observer data containing realized trip cost information. Estimates were calculated for all commercial (REC=0), federal (PERMIT_STATE_FED=“FEDERAL”) CAMS trips which had a valid date sail and land (RECORD_SAIL and RECORD_LAND) accomplished during 2010-2024.</p>
+<ul>
+<li><strong>Data Merging</strong>: Observer records (NEFOP &amp; ASM) containing trip cost information were merged into the CAMS dataset. This was achieved using a hierarchical matching algorithm based on the vessel hull number, gear type, fishing area, and record sailed/landed.</li>
+<li><strong>Fleet Classification</strong>: Trips were coded into SBRM fleet types according to a cumulative SBRM definition of the fishing fleet classifications. Gear, region of departure, and mesh size from the CAMS record were used to identify each trip’s respective SBRM fleet type.</li>
+<li><strong>Sector Affiliation</strong>: Groundfish sector affiliations (Sector IDs) were obtained from the Moratorium Qualification Review System (MQRS) database and merged using vessel permit numbers and year variables.</li>
+<li><strong>Secondary Sources</strong>: Average weekly wages of marina workers were retrieved from the Bureau of Labor Statistics. Daily New York Harbor diesel prices (Ultra-Low-Sulfur No. 2) were sourced from Federal Reserve Economic Data (DDFUELNYH).</li>
+<li><strong>Vessel Characteristics</strong>: Vessel characteristics, including age, horsepower, and gross tons, were retrieved from the Permit database.</li>
+</ul>
+</div>
+<div id="v.-model-types-gears-and-trip-durations" class="section level4 hasAnchor" number="8.4.4.3">
+<h4><span class="header-section-number">8.4.4.3</span> V. Model Types: Gears and Trip Durations<a href="trip-cost-model-estimates.html#v.-model-types-gears-and-trip-durations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>After generating the project database, the primary gear for each trip (NEGEAR) was identified using the gear associated with the largest quantity (lbs.) of species kept on the trip. Trips were then grouped into general gear categories believed to have similar cost functions: Trawl, Gillnet, Dredge, Longline, Seine, Pots and Traps, and Handlines/Handgear/Other Gear.</p>
+<ul>
+<li><strong>Trip Durations</strong>: Where possible, gear groups were further split into day trips (≤24 hours) and multiday trips (&gt;24 hours).</li>
+<li><strong>Statistical Validation</strong>: Chow tests were employed to assess the existence of structural breaks; results suggest significant differences (<span class="math inline">\(\alpha=0.01\)</span>) in model coefficients when comparing the two trip durations and various gear-type models.</li>
+<li><strong>Model Consolidation</strong>: In cases where gear types had limited observed trips, the day and multiday trips were estimated as a single model with a dummy variable to control for duration.</li>
+</ul>
+<div id="i.-models-and-variables" class="section level5 hasAnchor" number="8.4.4.3.1">
+<h5><span class="header-section-number">8.4.4.3.1</span> i. Models and Variables<a href="trip-cost-model-estimates.html#i.-models-and-variables" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>The Heckman Selection model depends on an underlying linear regression and a selection equation comprised of variables driving selection bias.</p>
+<ul>
+<li><strong>Model Choice</strong>: In cases where the Heckman Selection model fails to reject the null hypothesis (<span class="math inline">\(\rho=0\)</span>), an OLS model was used to estimate costs.</li>
+<li><strong>Dependent Variable</strong>: The dependent variable is the natural log of a composite trip cost variable (fuel, ice, bait, food/groceries, water, oil, and supplies) presented in 2024 constant dollars.</li>
+</ul>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Independent Variable</th>
+<th align="left">Description</th>
+<th align="left">Units</th>
+<th align="left">Model Type*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Ln Vessel Horse Power</strong></td>
+<td align="left">Natural log of vessel engine horsepower.</td>
+<td align="left">kW</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ln Vessel Gross Tons</strong></td>
+<td align="left">Natural log of vessel weight in gross metric tons.</td>
+<td align="left">Tons</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ln Vessel Age</strong></td>
+<td align="left">Natural log of vessel age (built date to 2024).</td>
+<td align="left">Years</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Ln Hours Absent</strong></td>
+<td align="left">Natural log of hours absent from port during a trip.</td>
+<td align="left">Hours</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ln Diesel Price</strong></td>
+<td align="left">Natural log of NY Harbor diesel price in 2024 constant dollars.</td>
+<td align="left">$/Gallon</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Average Weekly Wage</strong></td>
+<td align="left">Natural log of marina worker wages by state in 2024 constant dollars.</td>
+<td align="left">$/Week</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Seasonal Quarter</strong></td>
+<td align="left">Categorical variable for the season of trip commencement (Q1-Q4).</td>
+<td align="left">Categorical</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Calendar Year</strong></td>
+<td align="left">Calendar year in which the fishing trip was completed.</td>
+<td align="left">Categorical</td>
+<td align="left">OLS, H, HS</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>SBRM Fleet Type</strong></td>
+<td align="left">Categorizes trips by gear, region, access, and mesh size for stratification.</td>
+<td align="left">Categorical</td>
+<td align="left">HS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Groundfish Sector ID</strong></td>
+<td align="left">Categorical variable for sector affiliation, common pool, or neither.</td>
+<td align="left">Categorical</td>
+<td align="left">HS**</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Ln Number of Observers</strong></td>
+<td align="left">Natural log of onboard observers employed during the trip month.</td>
+<td align="left">Numeric</td>
+<td align="left">HS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 1 Notes:</strong>
+* <em>O=OLS, H=Heckman Selection (Trip cost regression), HS=Heckman Selection (Selection Equation).
+</em> **Groundfish Sector IDs are only used in gear models subject to groundfish monitoring.</p>
+</div>
+<div id="ii.-model-dollar-values" class="section level5 hasAnchor" number="8.4.4.3.2">
+<h5><span class="header-section-number">8.4.4.3.2</span> ii. Model Dollar Values<a href="trip-cost-model-estimates.html#ii.-model-dollar-values" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>All variables were adjusted to 2024 constant US dollars using the GDP implicit price deflator to control for inflation within the model.</p>
+</div>
+<div id="iii.-clustered-standard-errors" class="section level5 hasAnchor" number="8.4.4.3.3">
+<h5><span class="header-section-number">8.4.4.3.3</span> iii. Clustered Standard Errors<a href="trip-cost-model-estimates.html#iii.-clustered-standard-errors" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>Robust standard errors were used to address heteroscedasticity, identified using the Breusch-Pagan/Cook-Weisberg Test, in all Heckman and OLS models.</p>
+</div>
+<div id="iv.-selection-bias-and-trip-cost-predictions" class="section level5 hasAnchor" number="8.4.4.3.4">
+<h5><span class="header-section-number">8.4.4.3.4</span> iv. Selection Bias and Trip Cost Predictions<a href="trip-cost-model-estimates.html#iv.-selection-bias-and-trip-cost-predictions" class="anchor-section" aria-label="Anchor link to header"></a></h5>
+<p>The following table outlines the model choice for 2010-2024 predictions based on the Wald Test of Independent Equations.</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Gear Type</th>
+<th align="left">Trip Duration</th>
+<th align="left">No. Observed Trips</th>
+<th align="left">Wald Test (<span class="math inline">\(P&gt;\chi^2\)</span>)</th>
+<th align="left">Model Used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Trawl</strong></td>
+<td align="left">Day</td>
+<td align="left">15,959</td>
+<td align="left">0.2991</td>
+<td align="left">OLS</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Trawl</strong></td>
+<td align="left">Multiday</td>
+<td align="left">13,689</td>
+<td align="left">0.000</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Gillnet</strong></td>
+<td align="left">Day</td>
+<td align="left">15,864</td>
+<td align="left">0.000</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Gillnet</strong></td>
+<td align="left">Multiday</td>
+<td align="left">2,203</td>
+<td align="left">0.000</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Longline</strong></td>
+<td align="left">All Trips</td>
+<td align="left">942</td>
+<td align="left">0.000</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Dredge</strong></td>
+<td align="left">Day</td>
+<td align="left">1,739</td>
+<td align="left">0.6341</td>
+<td align="left">OLS</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Dredge</strong></td>
+<td align="left">Multiday</td>
+<td align="left">5,040</td>
+<td align="left">0.000</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Pots and Traps</strong></td>
+<td align="left">All Trips</td>
+<td align="left">487</td>
+<td align="left">0.00 (32.27)</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Seine</strong></td>
+<td align="left">All Trips</td>
+<td align="left">474</td>
+<td align="left">0.000 (37.79)</td>
+<td align="left">Heckman Selection</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Handline/Other</strong></td>
+<td align="left">All Trips</td>
+<td align="left">474</td>
+<td align="left">0.3147 (1.01)</td>
+<td align="left">OLS</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="vi.-retransformation-process" class="section level4 hasAnchor" number="8.4.4.4">
+<h4><span class="header-section-number">8.4.4.4</span> VI. Retransformation Process<a href="trip-cost-model-estimates.html#vi.-retransformation-process" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>As the independent variable (trip cost) was log-transformed for modeling purposes, Duan’s smearing estimate (1983) was used as a non-parametric retransformation process post-trip cost prediction.</p>
+</div>
+<div id="vii.-data-cleaning" class="section level4 hasAnchor" number="8.4.4.5">
+<h4><span class="header-section-number">8.4.4.5</span> VII. Data Cleaning<a href="trip-cost-model-estimates.html#vii.-data-cleaning" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Specific rules were applied to handle missing or zero values during the creation of the composite trip cost variable:</p>
+<ul>
+<li><strong>Fuel Price</strong>: The average annual fuel price was used for any trip reporting a fuel price <span class="math inline">\(\le 0\)</span> (~10% of records).</li>
+<li><strong>Fuel Gallons</strong>: Records reporting fuel gallons <span class="math inline">\(\le 0\)</span> were replaced with a predicted value based on hourly trip duration.</li>
+<li><strong>Ice</strong>: The mean annual ice price was used if the price was missing but a positive value for ice tons was reported.</li>
+<li><strong>Missing Values</strong>: All other missing values were interpreted as a zero cost.</li>
+<li><strong>Duration</strong>: If reported CAMS hours were <span class="math inline">\(\le 0\)</span>, the median hourly trip duration value was used for prediction.</li>
+</ul>
+</div>
+<div id="viii.-outliers" class="section level4 hasAnchor" number="8.4.4.6">
+<h4><span class="header-section-number">8.4.4.6</span> VIII. Outliers<a href="trip-cost-model-estimates.html#viii.-outliers" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Outliers were addressed during multiple stages of the modeling and prediction process:</p>
+<ul>
+<li><strong>Sub-category Winsorization</strong>: Each of the seven trip cost sub-categories was winsorized individually prior to generating the composite trip cost variable.</li>
+<li><strong>Composite Winsorization</strong>: The composite trip cost value was winsorized by gear and trip duration prior to modeling.</li>
+<li><strong>Duration Capping</strong>: Trips reporting durations less than 12 minutes or more than 20 hours were removed from the modeling stage.</li>
+<li><strong>Prediction Forms</strong>: Costs are presented in both winsorized and raw forms. Winsorization replaces values less than the 1st or greater than the 99th percentile with the 1st and 99th percentile values, respectively.</li>
+</ul>
+</div>
+<div id="ix.-trip-cost-values-and-predictions-2010-2024" class="section level4 hasAnchor" number="8.4.4.7">
+<h4><span class="header-section-number">8.4.4.7</span> IX. Trip Cost Values and Predictions (2010-2024)<a href="trip-cost-model-estimates.html#ix.-trip-cost-values-and-predictions-2010-2024" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Trip cost values and predictions are hosted on the NEFSC network drive. If the actual cost of a trip was recorded by an onboard data collector, that cost is presented in the final Excel file rather than a prediction.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable Name</th>
+<th align="left">Variable Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>CAMSID</strong></td>
+<td align="left">CAMS trip identification number.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>YEAR</strong></td>
+<td align="left">YEAR associated with the CAMSID record within the CAMS_LAND table.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>TRIP_COST_2024_DOL</strong></td>
+<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TRIP_COST_WINSOR_2024_DOL</strong></td>
+<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>OBSERVED_COST_DUMMY</strong></td>
+<td align="left">Indicator variable: 0 = unobserved, 1 = observed by an onboard observer.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>TRIP_COST_NOMINALDOLS</strong></td>
+<td align="left">Estimated and reported trip costs in nominal U.S. dollars.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>TRIP_COST_NOMINALDOLS_WINSOR</strong></td>
+<td align="left">Estimated and reported trip costs in nominal U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Footnote</strong>: Data Source: NEFSC Social Sciences Branch Reference Document
+## Data Sources and code
+### Data Sources
+Internal
+Observer / ASM
+Permit
+CAMS</p>
+<p>External</p>
+<p>Daily average Diesel prices from FRED ( DDFUELNYH,)
+National Marina Wage data from <a href="https://www.bls.gov/cew/downloadable-data-files.htm" class="uri">https://www.bls.gov/cew/downloadable-data-files.htm</a></p>
+</div>
+</div>
+<div id="code-5" class="section level3 hasAnchor" number="8.4.5">
+<h3><span class="header-section-number">8.4.5</span> Code<a href="trip-cost-model-estimates.html#code-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Code located on GitHub at: <a href="https://github.com/SWerner2/Trip_costs" class="uri">https://github.com/SWerner2/Trip_costs</a> (permission required)
+Readme - <a href="https://github.com/SWerner2/Trip_costs/blob/main/README.md" class="uri">https://github.com/SWerner2/Trip_costs/blob/main/README.md</a></p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
