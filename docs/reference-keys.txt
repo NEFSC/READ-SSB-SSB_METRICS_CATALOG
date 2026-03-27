@@ -82,16 +82,10 @@ additional-metadata
 data-sources-and-code-4
 data-sources-4
 code-4
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-primary-fishery
-primary-gearfishery
-survey-implementation-intercept-methodology
-port-selection-sampling
-data-outputsoutlets-4
 trip-cost-model-estimates
 product-overview-5
 point-of-contact-5
-data-outputsoutlets-5
+data-outputsoutlets-4
 list-of-metrics-5
 metric-descriptions-5
 additional-methods-and-decision-rules
@@ -100,6 +94,7 @@ trip-costs
 dollar-values-1
 heckman-modeling-notes
 background-and-justification
+iv.-database-generation
 v.-model-types-gears-and-trip-durations
 i.-models-and-variables
 ii.-model-dollar-values
@@ -111,6 +106,3 @@ viii.-outliers
 data-sources-and-code-5
 data-sources-5
 code-5
-iv.-selection-bias-and-trip-cost-predictions-table-2
-iv.-database-generation
-ix.-trip-cost-values-and-predictions-2010-2024
