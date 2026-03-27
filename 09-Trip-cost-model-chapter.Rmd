@@ -113,9 +113,9 @@ The following table outlines the model choice for 2010-2024 predictions based on
 | **Longline** | All Trips | 942 | 0.000 | Heckman Selection |
 | **Dredge** | Day | 1,739 | 0.6341 | OLS |
 | **Dredge** | Multiday | 5,040 | 0.000 | Heckman Selection |
-| **Pots and Traps** | All Trips | 487 | 0.00 (32.27) | Heckman Selection |
-| **Seine** | All Trips | 474 | 0.000 (37.79) | Heckman Selection |
-| **Handline/Other** | All Trips | 474 | 0.3147 (1.01) | OLS |
+| **Pots and Traps** | All Trips | 487 | 0.00  | Heckman Selection |
+| **Seine** | All Trips | 474 | 0.000  | Heckman Selection |
+| **Handline/Other** | All Trips | 474 | 0.3147  | OLS |
 
 #### VI. Retransformation Process
 As the independent variable (trip cost) was log-transformed for modeling purposes, Duan’s smearing estimate (1983) was used as a non-parametric retransformation process post-trip cost prediction.

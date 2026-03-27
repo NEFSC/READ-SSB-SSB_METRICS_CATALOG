@@ -23,7 +23,7 @@
 <meta name="author" content="A product of the SSB Data Working Group" />
 
 
-<meta name="date" content="2026-03-20" />
+<meta name="date" content="2026-03-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -229,7 +229,11 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <li class="chapter" data-level="8.4.2" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#trip-costs"><i class="fa fa-check"></i><b>8.4.2</b> Trip Costs</a></li>
 <li class="chapter" data-level="8.4.3" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#dollar-values-1"><i class="fa fa-check"></i><b>8.4.3</b> Dollar Values</a></li>
 <li class="chapter" data-level="8.4.4" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#heckman-modeling-notes"><i class="fa fa-check"></i><b>8.4.4</b> Heckman Modeling Notes</a></li>
-<li class="chapter" data-level="8.4.5" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#code-5"><i class="fa fa-check"></i><b>8.4.5</b> Code</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#data-sources-and-code-5"><i class="fa fa-check"></i><b>8.5</b> Data Sources and code</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#data-sources-5"><i class="fa fa-check"></i><b>8.5.1</b> Data Sources</a></li>
+<li class="chapter" data-level="8.5.2" data-path="trip-cost-model-estimates.html"><a href="trip-cost-model-estimates.html#code-5"><i class="fa fa-check"></i><b>8.5.2</b> Code</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -594,56 +598,13 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <li><strong>Prediction Forms</strong>: Costs are presented in both winsorized and raw forms. Winsorization replaces values less than the 1st or greater than the 99th percentile with the 1st and 99th percentile values, respectively.</li>
 </ul>
 </div>
-<div id="ix.-trip-cost-values-and-predictions-2010-2024" class="section level4 hasAnchor" number="8.4.4.7">
-<h4><span class="header-section-number">8.4.4.7</span> IX. Trip Cost Values and Predictions (2010-2024)<a href="trip-cost-model-estimates.html#ix.-trip-cost-values-and-predictions-2010-2024" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Trip cost values and predictions are hosted on the NEFSC network drive. If the actual cost of a trip was recorded by an onboard data collector, that cost is presented in the final Excel file rather than a prediction.</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Variable Name</th>
-<th align="left">Variable Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>CAMSID</strong></td>
-<td align="left">CAMS trip identification number.</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>YEAR</strong></td>
-<td align="left">YEAR associated with the CAMSID record within the CAMS_LAND table.</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>TRIP_COST_2024_DOL</strong></td>
-<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars.</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>TRIP_COST_WINSOR_2024_DOL</strong></td>
-<td align="left">Estimated and reported trip costs in 2024 constant U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>OBSERVED_COST_DUMMY</strong></td>
-<td align="left">Indicator variable: 0 = unobserved, 1 = observed by an onboard observer.</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>TRIP_COST_NOMINALDOLS</strong></td>
-<td align="left">Estimated and reported trip costs in nominal U.S. dollars.</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>TRIP_COST_NOMINALDOLS_WINSOR</strong></td>
-<td align="left">Estimated and reported trip costs in nominal U.S. dollars, winsorized at the 1st and 99th percentiles.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><strong>Footnote</strong>: Data Source: NEFSC Social Sciences Branch Reference Document
-## Data Sources and code
-### Data Sources
-Internal
+</div>
+</div>
+<div id="data-sources-and-code-5" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Data Sources and code<a href="trip-cost-model-estimates.html#data-sources-and-code-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-sources-5" class="section level3 hasAnchor" number="8.5.1">
+<h3><span class="header-section-number">8.5.1</span> Data Sources<a href="trip-cost-model-estimates.html#data-sources-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Internal
 Observer / ASM
 Permit
 CAMS</p>
@@ -651,9 +612,8 @@ CAMS</p>
 <p>Daily average Diesel prices from FRED ( DDFUELNYH,)
 National Marina Wage data from <a href="https://www.bls.gov/cew/downloadable-data-files.htm" class="uri">https://www.bls.gov/cew/downloadable-data-files.htm</a></p>
 </div>
-</div>
-<div id="code-5" class="section level3 hasAnchor" number="8.4.5">
-<h3><span class="header-section-number">8.4.5</span> Code<a href="trip-cost-model-estimates.html#code-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="code-5" class="section level3 hasAnchor" number="8.5.2">
+<h3><span class="header-section-number">8.5.2</span> Code<a href="trip-cost-model-estimates.html#code-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Code located on GitHub at: <a href="https://github.com/SWerner2/Trip_costs" class="uri">https://github.com/SWerner2/Trip_costs</a> (permission required)
 Readme - <a href="https://github.com/SWerner2/Trip_costs/blob/main/README.md" class="uri">https://github.com/SWerner2/Trip_costs/blob/main/README.md</a></p>
 
