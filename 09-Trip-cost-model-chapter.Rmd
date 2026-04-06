@@ -53,7 +53,7 @@ Trip costs are presented in both nominal and deflated values adjusted to the mos
 #### Background and Justification
 Commercial fishing variable costs are collected on a subset of trips via the Northeast Observer Program (NEFOP) and At-sea Monitoring (ASM). Because these programs prioritize biological data, cost estimates may suffer from selection bias. Heckman Selection models are used to simultaneously test and correct for this bias. Research shows that Ordinary Least Squares (OLS) and Heckman model predictions can differ significantly, particularly at the sub-fleet level.
 
-Here is the updated R Markdown (.Rmd) content. I have incorporated Sections V through VIII from the document, maintaining the level 4 (####) header structure and ensuring all technical details (like the Heckman Selection criteria and Winsorization process) are clearly defined for your report.
+This work was based on [Werner et al. 2020](https://www.journals.uchicago.edu/doi/full/10.1086/710668) 
 
 #### IV. Database Generation
 The project database was compiled using information from two main sources: (i) vessel trip reports derived from CAMS data and (ii) observer data containing realized trip cost information. Estimates were calculated for all commercial (REC=0), federal (PERMIT_STATE_FED="FEDERAL") CAMS trips which had a valid date sail and land (RECORD_SAIL and RECORD_LAND) accomplished during 2010-2024.
