@@ -1,0 +1,401 @@
+
+# Cost Data Visualization Tool 
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+## Product Overview
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
+
+
+* Unit: Responding vessels 
+* Summary Group(s):  Primary Gear Type of responding vessels
+* Frequency:  Annual (Intermittent)  
+* Time Series: (2011, 2012, 2015, 2022)
+
+
+
+### Point of Contact
+Samantha Werner (Samantha.Werner@noaa.gov)
+
+
+
+### Data Outputs/Outlets
+Cost data Visualization Tool: https://apps-nefsc.fisheries.noaa.gov/cost-data/about
+
+### Revenues
+
+Revenues are summarized for vessels that responded to the survey using information from the  Commercial Fishing Dealers Database.
+
+                        All costs are reported in 
+
+                        @php
+
+                            $currentMonth = date('n');
+
+                            $currentYear = date('Y');
+
+                              $rebaseYear = $currentMonth < 7 ? $currentYear - 2 : $currentYear - 1;
+
+                        @endphp
+
+                        {{ $rebaseYear }} dollars and are deflated using the GDP implicit price deflator (2012=100).
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Response Rates
+
+The response, sample, and population information describes the total number of participants that responded to the survey,
+
+                        the number of vessels/vessel owners who were sent a survey, and the total number of active commercial vessels by gear type,
+
+                        respectively. The definition of active has changed over time. For 2011, 2012, and 2015 a vessel had to have commercial landings
+
+                        in the survey year to be considered active. For 2022, a vessel had to have commercial landings in either 2021 or 2022.
+
+                        For some gear groups and years, responses are relatively low. For 2011, 2012 and 2015  analyses were conducted to identify
+
+                        if the respondents were statistically different from the sample. Results suggest that nonresponse bias was generally not
+
+                        detected when comparing survey respondents to non-respondents across vessel characteristics including vessel length, tonnage,
+
+                        horsepower, and age. For more information, please refer to the 2011, 2012 and 2015  cost survey
+
+                        Technical Memoranda.
+
+                        Because longline and seine gear had relatively low sample sizes and responses across the survey years, the number and percent of
+
+                        respondents are not displayed to protect data confidentiality.  Additional research is being conducted on the representativeness of the 2022 data.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Data Confidentiality
+
+Data confidentiality is protected by presenting three or more individual units of data.
+
+                        In cases where the summary does not meet this requirement, data are not presented.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Cost Categories and Sub-Costs
+
+The survey versions (2011, 2012, 2015, and 2022) were modified over the years such that each cost category
+
+                        may differ from year to year.  To further understand these changes please refer to the two Technical Memorandums: 2011, 2012, 2015
+
+                        Survey Data Tech Memo,
+
+                        Table 7 page 25-26 and the 2022 Data Processing Tech Memo (forthcoming), section "Changes from previous survey implementations".
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent
+
+                        on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business
+
+                        Cost Survey (see FAQ page). Increased responses
+
+                        will allow us to add additional gear categories to summarize
+
+                        data and explore additional options to display cost data. We also plan to develop a trip cost component of
+
+                        the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+### Future Expansions
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent
+
+                        on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business
+
+                        Cost Survey (see FAQ page). Increased responses
+
+                        will allow us to add additional gear categories to summarize
+
+                        data and explore additional options to display cost data. We also plan to develop a trip cost component of
+
+                        the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+
+### Summary Group Decision Rules
+
+The primary gear for each vessel is determined by the gear type which yielded the highest revenues from catch sold to a federal dealer in the year in which costs were being investigated. Though each vessel is grouped into a primary gear type, vessel costs are not apportioned to the gear usage, such that the summaries reflect a vessel's total costs for each year.
+
+### Revenues
+
+Revenues are summarized for vessels that responded to the survey using information from the Commercial Fishing Dealers Database. All costs are reported in @php $currentMonth = date('n'); $currentYear = date('Y'); $rebaseYear = $currentMonth < 7 ? $currentYear - 2 : $currentYear - 1; @endphp {{ $rebaseYear }} dollars and are deflated using the GDP implicit price deflator (2012=100).
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Response Rates
+
+The response, sample, and population information describes the total number of participants that responded to the survey, the number of vessels/vessel owners who were sent a survey, and the total number of active commercial vessels by gear type, respectively. The definition of active has changed over time. For 2011, 2012, and 2015 a vessel had to have commercial landings in the survey year to be considered active. For 2022, a vessel had to have commercial landings in either 2021 or 2022. For some gear groups and years, responses are relatively low. For 2011, 2012 and 2015 analyses were conducted to identify if the respondents were statistically different from the sample. Results suggest that nonresponse bias was generally not detected when comparing survey respondents to non-respondents across vessel characteristics including vessel length, tonnage, horsepower, and age. For more information, please refer to the 2011, 2012 and 2015 cost survey Technical Memoranda. Because longline and seine gear had relatively low sample sizes and responses across the survey years, the number and percent of respondents are not displayed to protect data confidentiality. Additional research is being conducted on the representativeness of the 2022 data.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Data Confidentiality
+
+Data confidentiality is protected by presenting three or more individual units of data. In cases where the summary does not meet this requirement, data are not presented.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Cost Categories and Sub-Costs
+
+The survey versions (2011, 2012, 2015, and 2022) were modified over the years such that each cost category may differ from year to year. To further understand these changes please refer to the two Technical Memorandums: 2011, 2012, 2015 Survey Data Tech Memo, Table 7 page 25-26 and the 2022 Data Processing Tech Memo (forthcoming), section "Changes from previous survey implementations".
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+### Future Expansions
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+
+### Summary Group Decision Rules
+
+The primary gear for each vessel is determined by the gear type which yielded the highest revenues from catch sold to a federal dealer in the year in which costs were being investigated. Though each vessel is grouped into a primary gear type, vessel costs are not apportioned to the gear usage, such that the summaries reflect a vessel's total costs for each year.
+
+### Revenues
+
+Revenues are summarized for vessels that responded to the survey using information from the Commercial Fishing Dealers Database. All costs are reported in @php $currentMonth = date('n'); $currentYear = date('Y'); $rebaseYear = $currentMonth < 7 ? $currentYear - 2 : $currentYear - 1; @endphp {{ $rebaseYear }} dollars and are deflated using the GDP implicit price deflator (2012=100).
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Response Rates
+
+The response, sample, and population information describes the total number of participants that responded to the survey, the number of vessels/vessel owners who were sent a survey, and the total number of active commercial vessels by gear type, respectively. The definition of active has changed over time. For 2011, 2012, and 2015 a vessel had to have commercial landings in the survey year to be considered active. For 2022, a vessel had to have commercial landings in either 2021 or 2022. For some gear groups and years, responses are relatively low. For 2011, 2012 and 2015 analyses were conducted to identify if the respondents were statistically different from the sample. Results suggest that nonresponse bias was generally not detected when comparing survey respondents to non-respondents across vessel characteristics including vessel length, tonnage, horsepower, and age. For more information, please refer to the 2011, 2012 and 2015 cost survey Technical Memoranda. Because longline and seine gear had relatively low sample sizes and responses across the survey years, the number and percent of respondents are not displayed to protect data confidentiality. Additional research is being conducted on the representativeness of the 2022 data.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Data Confidentiality
+
+Data confidentiality is protected by presenting three or more individual units of data. In cases where the summary does not meet this requirement, data are not presented.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Cost Categories and Sub-Costs
+
+The survey versions (2011, 2012, 2015, and 2022) were modified over the years such that each cost category may differ from year to year. To further understand these changes please refer to the two Technical Memorandums: 2011, 2012, 2015 Survey Data Tech Memo, Table 7 page 25-26 and the 2022 Data Processing Tech Memo (forthcoming), section "Changes from previous survey implementations".
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+### Future Expansions
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+
+## List of Metrics
+
+
+* **Overhead Costs**
+  * Business Vehicle Usage Costs
+  * Business Travel Costs*
+  * Association Fees Paid
+  * Professional Fees Paid
+  * Advertising Costs*
+  * Communications Costs
+  * Office/Workshop/Storage Expenses
+  * *Non-crew Labor Payments
+* **Repair/Maintenance & Upgrade/ Improvement**
+  * Propulsion Engine
+  * Deck Equipment/Other Machinery
+  * Hull
+  * Fishing Gear
+  * Processing/Refrigeration*
+  * Safety Equipment
+  * Haul-out Costs
+* **Total Payment to Crew/Hired Captain**
+  * *Total Annual Payments and Benefits Made to Crew/Hired Captain
+* **Vessel Costs**
+  * Mooring/Dockage Fees
+  * State and Federal Permits and/or License Renewal Fees
+  * Vessel or Permit Payments
+  * Vessel Insurance Premium
+
+
+## Metric Descriptions
+
+
+|Cost Category                             |Sub-Components                                                                                                                                                                                                          |Description/Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Overhead Costs                            |Business Vehicle Usage Costs<br>Business Travel Costs*<br>Association Fees Paid<br>Professional Fees Paid<br>Advertising Costs*<br>Communications Costs<br>Office/Workshop/Storage Expenses<br>*Non-crew Labor Payments |For the purposes of reporting vessel-level costs, business-level costs have to be apportioned to obtain a vessel-level cost. For the 2011 survey, owners of multiple vessels were instructed to only report their business costs associated with the vessel specified at the beginning of the survey (i.e., vessel owners were asked to apportion a percentage of their total business cost to the specified vessel). For the 2012 and 2015 surveys, owners of multiple vessels were instructed to report their cumulative business costs across all vessels, and to also provide the number of vessels owned. For those two survey years, we divide through to calculate the average business cost per vessel. For the 2022 survey, the respondent was asked to either provide the overhead cost pertaining to the selected vessel or for their entire business. If the total business cost was reported, this value is presented here after dividing by the number of vessels owned. In addition, legal fees were collected separately in 2022 but are summarized in the "Professional Fees Paid" category. |
+|Repair/Maintenance & Upgrade/ Improvement |Propulsion Engine<br>Deck Equipment/Other Machinery<br>Hull<br>Fishing Gear<br>Processing/Refrigeration*<br>Safety Equipment<br>Haul-out Costs                                                                          |For the 2011, 2012, and 2022 surveys, the costs for each of these category components was queried separately. For the 2015 survey, a composite value across all cost components was queried. Additionally, for the 2012 survey, a separate line item for "Other Repair/Maintenance Costs" was queried. These costs were binned into "Other Costs" to maintain consistency in this cost category. In 2022, "new" costs incurred was added to this category. The 2011, 2012, and 2022 surveys were queried only at the vessel-level for repair/maintenance costs, while the 2015 survey queried these costs at the vessel-level and business-level. To be consistent with the previous surveys, only vessel-level costs are summarized.                                                                                                                                                                                                                                                                                                                                                                         |
+|Total Payment to Crew/Hired Captain       |*Total Annual Payments and Benefits Made to Crew/Hired Captain                                                                                                                                                          |Vessel payments to crew/hired captain and benefits paid to crew/hired captain were queried during each of the four survey years. Total payments to crew and hired captains were collected separately in 2012, 2015, and 2022 and as a single combined value in 2011. The majority of vessel owners across all years (~90%) indicated they did not provide benefits to crew. Crew payments and benefits were aggregated to form the total payment to crew/hired captain category.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|Vessel Costs                              |Mooring/Dockage Fees<br>State and Federal Permits and/or License Renewal Fees<br>Vessel or Permit Payments<br>Vessel Insurance Premium                                                                                  |In 2011, 2012 and 2015, the "Vessel or Permit Payments" variable includes principal paid on business loans and interest paid on business loans while in 2022 it includes amount paid on down payments or loans on vessel/permit purchases (including tax). Overhead costs were calculated at the business-level for 2012 and 2015, but presented here by dividing by the number of vessels owned.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+
+## Additional Methods/Decision Rules
+
+
+### Summary Group Decision Rules
+
+The primary gear for each vessel is determined by the gear type which yielded the highest revenues from catch sold to a federal dealer in the year in which costs were being investigated. Though each vessel is grouped into a primary gear type, vessel costs are not apportioned to the gear usage, such that the summaries reflect a vessel's total costs for each year.
+
+### Revenues
+
+Revenues are summarized for vessels that responded to the survey using information from the Commercial Fishing Dealers Database. All costs are reported in @php $currentMonth = date('n'); $currentYear = date('Y'); $rebaseYear = $currentMonth < 7 ? $currentYear - 2 : $currentYear - 1; @endphp {{ $rebaseYear }} dollars and are deflated using the GDP implicit price deflator (2012=100).
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Response Rates
+
+The response, sample, and population information describes the total number of participants that responded to the survey, the number of vessels/vessel owners who were sent a survey, and the total number of active commercial vessels by gear type, respectively. The definition of active has changed over time. For 2011, 2012, and 2015 a vessel had to have commercial landings in the survey year to be considered active. For 2022, a vessel had to have commercial landings in either 2021 or 2022. For some gear groups and years, responses are relatively low. For 2011, 2012 and 2015 analyses were conducted to identify if the respondents were statistically different from the sample. Results suggest that nonresponse bias was generally not detected when comparing survey respondents to non-respondents across vessel characteristics including vessel length, tonnage, horsepower, and age. For more information, please refer to the 2011, 2012 and 2015 cost survey Technical Memoranda. Because longline and seine gear had relatively low sample sizes and responses across the survey years, the number and percent of respondents are not displayed to protect data confidentiality. Additional research is being conducted on the representativeness of the 2022 data.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Data Confidentiality
+
+Data confidentiality is protected by presenting three or more individual units of data. In cases where the summary does not meet this requirement, data are not presented.
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+### Cost Categories and Sub-Costs
+
+The survey versions (2011, 2012, 2015, and 2022) were modified over the years such that each cost category may differ from year to year. To further understand these changes please refer to the two Technical Memorandums: 2011, 2012, 2015 Survey Data Tech Memo, Table 7 page 25-26 and the 2022 Data Processing Tech Memo (forthcoming), section "Changes from previous survey implementations".
+
+All data are presented as an annual cost for the year in which the data were collected.
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+### Future Expansions
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+
+## Data Sources and Code 
+
+### Data Sources 
+* Cost data- SSB_COST_SURVEY.VCS_COMMON_VARIABLES_MV 
+* Metadata: https://swerner2.github.io/ORACLE_COST_SURVEY_METADATA/
+* Number of Crew- Permit
+* Revenue - CFDERS
+
+### Code
+Metric Creation Code File Location: Created on production side 
+Read Me file (file to run code): Created on production side 
+Website Production Code Location: https://github.com/NEFSC/READ-SSB-COST-DATA (Permissions Required)
+Read Me file (file to run code): N/A
+
+
