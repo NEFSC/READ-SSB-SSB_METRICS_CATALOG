@@ -11,7 +11,8 @@ This site presents commercial fishing vessel profits during 2022 for vessels who
 Gregory Ardini (Gregory.Ardini@noaa.gov)
 
 ### Data Outputs/Outlets 
-https://ardini-noaa.github.io/2022_Vessel_Profit_Snapshots/
+https://nefsc.github.io/READ-SSB-Vessel_Profit_Snapshots_2022/
+
 
 ## List of Metrics 
 * Revenue
