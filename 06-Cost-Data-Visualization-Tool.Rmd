@@ -1,110 +1,119 @@
 
-
 # Cost Data Visualization Tool 
+
 ## Product Overview
-This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. 
+
+
+Greater Atlantic Commercial Fishing Vessel Costs
+
+This tool summarizes the results of the Northeast Fisheries Science Center cost survey at the commercial fishing vessel-level for costs incurred in 2011, 2012, 2015 and 2022. This tool does not include trip cost information.
 
 * Unit: Responding vessels 
 * Summary Group(s):  Primary Gear Type of responding vessels
 * Frequency:  Annual (Intermittent)  
-* Time Series: (2011, 2012, 2015, 2022
+* Time Series: (2011, 2012, 2015, 2022)
+
 
 
 ### Point of Contact
 Samantha Werner (Samantha.Werner@noaa.gov)
 
 
-
 ### Data Outputs/Outlets
 Cost data Visualization Tool: https://apps-nefsc.fisheries.noaa.gov/cost-data/about
 
 ## List of Metrics
-* Repair/Maintenance & Upgrade/Improvement
-* Propulsion Engine
-* Deck Equipment/Other Machinery
-* Hull
-* Fishing Gear
-* Processing/Refrigeration
-* Safety Equipment
-* Wheelhouse Electronics
-* Haul-out Costs
-* Vessel Costs
-* Mooring/Dockage Fees
-* Permit Fees
-* Vessel/Permit Payments
-* Vessel Insurance
-* Overhead Costs
-* Professional Fees
-* Office Expenses
-* Association Fees
-* Communications
-* Business Travel
-* Advertising
-* Business Vehicle Usage
-* Non-Crew Labor
-* Crew/Hired Captain
-* Crew Payments
-* Hired Captain Payments
-* Crew Benefits
-* Total Cost
+
+
+* **Overhead Costs**
+  * Business Vehicle Usage Costs
+  * Business Travel Costs*
+  * Association Fees Paid
+  * Professional Fees Paid
+  * Advertising Costs*
+  * Communications Costs
+  * Office/Workshop/Storage Expenses
+  * *Non-crew Labor Payments
+* **Repair/Maintenance & Upgrade/ Improvement**
+  * Propulsion Engine
+  * Deck Equipment/Other Machinery
+  * Hull
+  * Fishing Gear
+  * Processing/Refrigeration*
+  * Safety Equipment
+  * Haul-out Costs
+* **Total Payment to Crew/Hired Captain**
+  * *Total Annual Payments and Benefits Made to Crew/Hired Captain
+* **Vessel Costs**
+  * Mooring/Dockage Fees
+  * State and Federal Permits and/or License Renewal Fees
+  * Vessel or Permit Payments
+  * Vessel Insurance Premium
 
 
 ## Metric Descriptions
-### Sub-cost categories 
-* Deck Equipment/Other Machinery
-* Fishing Gear
-* Haul-out
-* Hull
-* Processing/Refrigeration
-* Propulsion Engine
-* Safety Equipment
-* Wheelhouse Electronics
-* Mooring Fees
-* Permit Fees
-* Vessel or Permit Payments
-* Vessel Insurance Premium
-* All Overhead Costs (Summary)
-* Advertising Costs
-* Association Fees
-* Business Travel Costs
-* Business Vehicle Usage
-* Communications Costs
-* Non-crew Labor Payments
-* Office Expenses
-* Professional Fees
-* Crew Payments
-* Hired Captain Payments
-* Crew Benefits
 
-### Major cost categories 
-* Repair/Maintenance & Upgrade/ Improvement - Combined category of the following sub-costs
-* Propulsion Engine
-* Deck Equipment/Other Machinery
-* Hull
-* Fishing Gear
-* Processing/Refrigeration*
-* Safety Equipment
-* Haul-out Costs
-Description: For the 2011, 2012, and 2022 surveys, the costs for each of these category components was queried separately. For the 2015 survey, a composite value across all cost components was queried. Additionally, for the 2012 survey, a separate line item for "Other Repair/Maintenance Costs" was queried. These costs were binned into "Other Costs" to maintain consistency in this cost category. In 2022, "new" costs incurred were added to this category. The 2011, 2012, and 2022 surveys were queried only at the vessel-level for repair/maintenance costs, while the 2015 survey queried these costs at the vessel-level and business-level. To be consistent with the previous surveys, only vessel-level costs are summarized.
-* Vessel Costs - Combined category of the following sub-costs:
-* Mooring/Dockage Fees
-* State and Federal Permits and/or License Renewal Fees
-* Vessel or Permit Payments
-* Vessel Insurance Premium
-Description: In 2011, 2012 and 2015, the "Vessel or Permit Payments" variable includes principal paid on business loans and interest paid on business loans while in 2022 it includes amount paid on down payments or loans on vessel/permit purchases (including tax). Overhead costs were calculated at the business-level for 2012 and 2015, but presented here by dividing by the number of vessels owned.
-* Total Payment to Crew/Hired Captain- Combined category of the following sub-costs:
-* Crew Payments
-* Hired Captain Payments
-* Crew Benefits
-Description: Vessel payments to crew/hired captain and benefits paid to crew/hired captain were queried during each of the four survey years. Total payments to crew and hired captains were collected separately in 2012, 2015, and 2022 and as a single combined value in 2011. The majority of vessel owners across all years (~90%) indicated they did not provide benefits to crew. Crew payments and benefits were aggregated to form the total payment to crew/hired captain category.
-* Total Cost - Combined aggregate of all the above cost categories 
+
+|Cost Category                             |Sub-Components                                                                                                                                                                                                          |Description/Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Overhead Costs                            |Business Vehicle Usage Costs<br>Business Travel Costs*<br>Association Fees Paid<br>Professional Fees Paid<br>Advertising Costs*<br>Communications Costs<br>Office/Workshop/Storage Expenses<br>*Non-crew Labor Payments |For the purposes of reporting vessel-level costs, business-level costs have to be apportioned to obtain a vessel-level cost. For the 2011 survey, owners of multiple vessels were instructed to only report their business costs associated with the vessel specified at the beginning of the survey (i.e., vessel owners were asked to apportion a percentage of their total business cost to the specified vessel). For the 2012 and 2015 surveys, owners of multiple vessels were instructed to report their cumulative business costs across all vessels, and to also provide the number of vessels owned. For those two survey years, we divide through to calculate the average business cost per vessel. For the 2022 survey, the respondent was asked to either provide the overhead cost pertaining to the selected vessel or for their entire business. If the total business cost was reported, this value is presented here after dividing by the number of vessels owned. In addition, legal fees were collected separately in 2022 but are summarized in the "Professional Fees Paid" category. |
+|Repair/Maintenance & Upgrade/ Improvement |Propulsion Engine<br>Deck Equipment/Other Machinery<br>Hull<br>Fishing Gear<br>Processing/Refrigeration*<br>Safety Equipment<br>Haul-out Costs                                                                          |For the 2011, 2012, and 2022 surveys, the costs for each of these category components was queried separately. For the 2015 survey, a composite value across all cost components was queried. Additionally, for the 2012 survey, a separate line item for "Other Repair/Maintenance Costs" was queried. These costs were binned into "Other Costs" to maintain consistency in this cost category. In 2022, "new" costs incurred was added to this category. The 2011, 2012, and 2022 surveys were queried only at the vessel-level for repair/maintenance costs, while the 2015 survey queried these costs at the vessel-level and business-level. To be consistent with the previous surveys, only vessel-level costs are summarized.                                                                                                                                                                                                                                                                                                                                                                         |
+|Total Payment to Crew/Hired Captain       |*Total Annual Payments and Benefits Made to Crew/Hired Captain                                                                                                                                                          |Vessel payments to crew/hired captain and benefits paid to crew/hired captain were queried during each of the four survey years. Total payments to crew and hired captains were collected separately in 2012, 2015, and 2022 and as a single combined value in 2011. The majority of vessel owners across all years (~90%) indicated they did not provide benefits to crew. Crew payments and benefits were aggregated to form the total payment to crew/hired captain category.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|Vessel Costs                              |Mooring/Dockage Fees<br>State and Federal Permits and/or License Renewal Fees<br>Vessel or Permit Payments<br>Vessel Insurance Premium                                                                                  |In 2011, 2012 and 2015, the "Vessel or Permit Payments" variable includes principal paid on business loans and interest paid on business loans while in 2022 it includes amount paid on down payments or loans on vessel/permit purchases (including tax). Overhead costs were calculated at the business-level for 2012 and 2015, but presented here by dividing by the number of vessels owned.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
 
 ## Additional Methods/Decision Rules
+
+
 ### Summary Group Decision Rules
+
+
 The primary gear for each vessel is determined by the gear type which yielded the highest revenues from catch sold to a federal dealer in the year in which costs were being investigated. Though each vessel is grouped into a primary gear type, vessel costs are not apportioned to the gear usage, such that the summaries reflect a vessel's total costs for each year.
 
+
+### Gear Grouping
+
+The primary gear for each vessel is determined by the gear type which yielded the highest revenues from catch sold to a federal dealer in the year in which costs were being investigated.
+
+Though each vessel is grouped into a primary gear type, vessel costs are not apportioned to the gear usage, such that the summaries reflect a vessel's total costs for each year.
+
+### Histogram Bin Generation
+
+Histogram cost groupings or "bins" are generated using the information collected for each individual cost category and will differ depending on which cost category and gear type are selected. The percent of responses are generated using the total number of unique participants that responded to each cost or sub-cost category divided by the number of participants that fall into each cost bin, multiplied by 100. The percent of respondents are grouped into three separate bins for each year. The cost ranges for each bin were determined using the rounded average for all costs in that specific category from 2011, 2012 and 2015. Once the rounded average is determined the following equation is used:
+
+For example, the average mooring fees for dredge vessels, across 2011, 2012, and 2015 survey responses, is $5,016. Rounding is based on the number of digits, in this case the 4 digits, meaning the rounded average is $5,000. If the owner of a dredge vessel incurred mooring fees of $0-$2,500, in a year, they would be in bin 1. If the amount incurred were $2,501-$5,000, the response would fall in bin 2. If the amount incurred were >$5,000, the response would fall in bin 3.
+
+### Revenues
+
+Revenues are summarized for vessels that responded to the survey using information from the Commercial Fishing Dealers Database. All costs are reported in 2024 dollars and are deflated using the GDP implicit price deflator (2012=100).
+
+### Response Rates
+
+The response, sample, and population information describes the total number of participants that responded to the survey, the number of vessels/vessel owners who were sent a survey, and the total number of active commercial vessels by gear type, respectively. The definition of active has changed over time. For 2011, 2012, and 2015 a vessel had to have commercial landings in the survey year to be considered active. For 2022, a vessel had to have commercial landings in either 2021 or 2022. For some gear groups and years, responses are relatively low. For 2011, 2012 and 2015 analyses were conducted to identify if the respondents were statistically different from the sample. Results suggest that nonresponse bias was generally not detected when comparing survey respondents to non-respondents across vessel characteristics including vessel length, tonnage, horsepower, and age. For more information, please refer to the 2011, 2012 and 2015 cost survey Technical Memoranda. Because longline and seine gear had relatively low sample sizes and responses across the survey years, the number and percent of respondents are not displayed to protect data confidentiality. Additional research is being conducted on the representativeness of the 2022 data.
+
 ### Data Quality Control and Outlier Removal
+
 There were multiple areas in which data quality was assessed across all survey years. In a small number of cases, a vessel owner filled out multiple surveys within the same year. For these occurrences, only the first returned survey was retained for data analysis. If a survey respondent provided a cost range to a question as opposed to a single value, the average was taken to serve as the reported value. If a survey respondent skipped a particular question, no data imputation was performed and the value was not assumed to be $0.00 unless $0.00 was written by the participant. For detection of data outliers in 2011, 2012 and 2015, any returned survey that contained values greater than 5 standard deviations from the mean for the repair/maintenance, upgrade/improvement, vessel costs, or overhead cost categories was excluded from the data analysis. The total number of survey responses dropped based on the removal of outliers was 12 responses for 2011, 7 responses for 2012, and 5 responses for 2015. The 2022 survey data went through a more rigorous outlier analysis than in previous years which is documented in the data processing Technical Memoranda (forthcoming), which addressed data outliers and data entry errors.
+
+### Data Confidentiality
+
+Data confidentiality is protected by presenting three or more individual units of data. In cases where the summary does not meet this requirement, data are not presented.
+
+### Cost Categories and Sub-Costs
+
+The survey versions (2011, 2012, 2015, and 2022) were modified over the years such that each cost category may differ from year to year. To further understand these changes please refer to the two Technical Memorandums: 2011, 2012, 2015 Survey Data Tech Memo, Table 7 page 25-26 and the 2022 Data Processing Tech Memo (forthcoming), section "Changes from previous survey implementations".
+
+Only some sub-categories are presented for the user to query individually given limited responses per category. However, all the components of the major cost categories are presented in the metadata table below.
+
+The cost categories summarized in the web tool include the following sub-components:
+
+### Future Expansions
+
+This tool is intended to evolve and expand to address users' needs. Many planned expansions are dependent on commercial fishing vessel owners responding to the Greater Atlantic Region Commercial Fishing Business Cost Survey (see FAQ page). Increased responses will allow us to add additional gear categories to summarize data and explore additional options to display cost data. We also plan to develop a trip cost component of the tool. This tool will be updated regularly to incorporate user input and add processed survey data.
+
+
+All data are presented as an annual cost for the year in which the data were collected.
+
 
 ## Data Sources and Code 
 
@@ -119,6 +128,5 @@ Metric Creation Code File Location: Created on production side
 Read Me file (file to run code): Created on production side 
 Website Production Code Location: https://github.com/NEFSC/READ-SSB-COST-DATA (Permissions Required)
 Read Me file (file to run code): N/A
-
 
 
