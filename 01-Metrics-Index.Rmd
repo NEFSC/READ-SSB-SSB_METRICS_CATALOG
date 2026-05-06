@@ -48,7 +48,7 @@ df %>%
     align = "l", 
     longtable = TRUE,
     # Define the display names here to get rid of the periods
-    col.names = c("Metric Category",	"Metric", 	"Metric Alias",	"Data Output Source", 	"Summary Group(s)",	"Unit", 	"Time Series" ,	"Commercial, Recreational, Both" 
+    col.names = c("Metric Category",	"Metric",	"Data Output Source", 	"Summary Group(s)",	"Unit", 	"Time Series" ,	"Commercial, Recreational, Both" 
 ),
     caption = "Social Sciences Branch Metrics Overview"
   ) %>%

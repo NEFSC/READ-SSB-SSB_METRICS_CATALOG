@@ -1,5 +1,6 @@
 
-# Cost Data Visualization Tool
+****This is the outline for the ssb metrics catalog product chapters. Follow the instructions below to build your readme. Reach out if you have any questions
+# [PRODUCT NAME HERE]
 
 ## Product Overview
 

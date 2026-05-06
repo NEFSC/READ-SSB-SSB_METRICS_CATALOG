@@ -1,0 +1,31 @@
+#README
+
+This file describes how you will update chapters.
+
+PRIOR to running the code scripts, you will need to clone the source repo of each chapter which is being pointed to.
+You have to do this rather than reading directly from the repo online because there are permission barriers.
+This is as easy as making a local repo of the source github repo, cloning and then doing a pull request.
+Then you area ready to run the update code. 
+These repos should live in thier own folder eg: C:/Users/samantha.l.werner/Desktop/Github/READ-SSB-SSB_Metrics_Catalog_SOURCEDATA
+
+Once this is done, you will be able to "point" to the source data using the code. As long as the pathways are the same, you should be able to run the code after doing this first step. 
+
+Good luck! 
+
+
+
+***Clone the following repos for the following chapters****
+* Performance measures - 
+https://github.com/NEFSC/READ-SSB-PM/blob/main/app/Views/home.twig
+https://github.com/NEFSC/READ-SSB-PM/blob/main/app/Views/definitions.twig
+
+Profit snapshots - https://github.com/NEFSC/READ-SSB-Vessel_Profit_Snapshots_2022/tree/main
+
+Cost data vis tool - Web Web https://github.com/NEFSC/READ-SSB-COST-DATA/tree/cost-data/app/Views/about.blade.php"
+
+Crew survey - 
+
+RFA - https://github.com/NEFSC/READ-SSB-Lee-RFAdataset
+
+Trip cost model - to be built on Github instead of PDF format 
+
