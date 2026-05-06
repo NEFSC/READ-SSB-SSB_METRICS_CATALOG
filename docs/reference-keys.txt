@@ -111,3 +111,9 @@ viii.-outliers
 data-sources-and-code-5
 data-sources-5
 code-5
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
+primary-fishery
+primary-gearfishery
+survey-implementation-intercept-methodology
+port-selection-sampling
+data-outputsoutlets-5
