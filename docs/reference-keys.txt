@@ -70,6 +70,8 @@ list-of-metrics-3
 metric-descriptions-3
 additional-methodsdecision-rules-3
 target-population-sample-framework
+survey-implementation-intercept-methodology
+port-selection-sampling
 data-sources-and-code-3
 data-sources-3
 code-3
@@ -111,9 +113,3 @@ viii.-outliers
 data-sources-and-code-5
 data-sources-5
 code-5
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-primary-fishery
-primary-gearfishery
-survey-implementation-intercept-methodology
-port-selection-sampling
-data-outputsoutlets-5

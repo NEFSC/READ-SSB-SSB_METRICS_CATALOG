@@ -61,10 +61,13 @@ The Crew Survey Visualization Tool displays metrics collected from the Crew Surv
 * Regulations Too Restrictive: Single-choice response on a Likert-style scale of agreement with the statement, "I feel that the regulations in my primary fishery are too restrictive."
 
 ## Additional methods/decision rules 
+
 ### Target Population & Sample Framework
 The target population for the Crew Survey consists of individuals who work as crew on commercial fishing vessels operating in the New England and Mid-Atlantic regions of the United States. Since there is no available database or registry of crew in the target regions, estimates of employment in commercial fishing are used to derive a sample size target for the region as a whole. Commercial fishing employment estimates used to calculate sample size come from three data sources: 1) Census Country Business Patterns; 2) Bureau of Labor Statistics Covered Employment and Wages; and 3) Bureau of Economic Analysis Regional Economic Accounts.
+
 ### Survey Implementation & Intercept Methodology
 Although employment estimates, and therefore target sample sizes, vary somewhat from year to year, the sample targets generally range from 400-450 survey interviews each implementation. The actual samples vary more widely, with 356 completed surveys in 2012-2013, 478 in 2018-2019, and 162 in 2023-2024. The primary reason for such variation in the achieved sample size by survey wave is due to the survey modality, which is an intercept method by necessity. Since there is no contact information available for commercial fishing vessel crews, survey interviews must be conducted by random intercept at docks where commercial fishing vessel crews can be approached.
+
 ### Port Selection & Sampling
 Since data collection involves an intercept method at docks where commercial fishing activity takes place, a random sample of fishing ports is selected from the universe of ports in the Northeast and Mid-Atlantic states. To ensure that the most active ports are selected, a probability proportional to size (PPS) sampling method is applied in order to purposely add weight in the selection process to ports with more fishing activity. Specifically, under a PPS approach a port's probability of being selected into the sample is related to the "size" of the port, with larger ports being more likely to be selected into the sample. Port size is assessed using a commercial fishing engagement index from the NOAA Fisheries Social Indicators.
 
