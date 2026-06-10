@@ -1,0 +1,53 @@
+
+# Input-Output Modeling
+
+## Product Overview
+
+Input Output Modeling is a method of evaluating the economic contribution of commercial and recreational fishing and to assess downstream impacts. 
+The Northeast Region Commercial Fishing Input-Output Model (NERIOM) was developed to allocate revenues and costs by fishing fleets.  
+Each cost category is assigned to one or more sectors that correspond to the IMPLAN cloud software for running the model. 
+The software is used to estimate various impact metrics from the NEFSC produced datasets.
+
+* Unit: Fishing fleets defined by gear and vessel length
+* Summary Group(s): Analyses typically conducted for the Northeast region (Maine to North Carolina) or by state
+* Frequency: Model input data, both costs and revenues are updated periodically. 
+Cost distributions are updated following each implementation of the Greater Atlantic Region Commercial Fishing Business Cost Survey. 
+Revenue distributions are updated every 1-2 years.
+* Time Series: Model can be run at different time periods but generally offers the greatest utility when period of interest closely aligns with input data years.
+
+### Point of Contact
+Greg Ardini (Gregory.ardini@noaa.gov)
+
+### Data Outputs/Outlets
+https://github.com/Ardini-NOAA/READ-SSB-Input_Output_Modeling.git
+
+## List of Metrics
+
+* Employment
+* Direct Impacts
+* Indirect Impacts
+* Inducted Impacts
+
+## Metric Descriptions
+
+
+| **Metric** | **Description** |
+| :--- | :--- |
+| **Employment** | Industry-specific count of seasonal employment as a mix of full-time, part-time, and seasonal jobs. As individuals can hold more than one job, the count of jobs is not the same as the count of employed individuals. |
+| **Direct Impacts** | The initial effects to a local industry or industries due to the activity or policy being analyzed. For example, an increase in fishing quota may increase fishing effort and landings, resulting in a higher direct impact for the fishing industry as well as the industries they are directly purchasing from (e.g., fuel, bait, ice suppliers). |
+| **Indirect Impacts** | The effects stemming from business-to-business purchases in the supply chain taking place in the region (generally the Northeast region). For example, when a higher fishing quota increases effort and thereby fuel consumption, the fuel supplier adjusts their spending with other industries. |
+| **Induced Impacts** | The effects in the region stemming from changes in household spending. For example, how household spending shifts in response to an increase or decrease in seafood production in the Northeast region. |
+## Additional Methods/Decision Rules
+
+## Data Sources and Code
+
+### Data Sources
+* Greater Atlantic Region Commercial Fishing Business Cost Survey
+* CAMS
+* IMPLAN (license required) is used to run the Input-Output Model
+
+### Code
+Metric Creation Code File Location: https://github.com/Ardini-NOAA/READ-SSB-Input_Output_Modeling/
+Read Me file (file to run code): N/A
+Website Production Code Location:N/A
+Read Me file (file to run code): N/A
