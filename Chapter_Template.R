@@ -25,6 +25,12 @@
 
 
 ## Metric Descriptions
+| Variable Name | Type | Description | Notes | 
+| :--- | :--- | :--- | :--- | 
+
+| insert text here| insert text here | insert text here | insert text here | 
+**example
+| HULLNUM | VARCHAR2(30 BYTE) | Official vessel registration number | This is the same as hullid | 
 
 
 ## Additional Methods/Decision Rules
