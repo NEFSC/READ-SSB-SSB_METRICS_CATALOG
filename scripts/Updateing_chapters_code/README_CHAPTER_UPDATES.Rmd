@@ -29,3 +29,6 @@ RFA - https://github.com/NEFSC/READ-SSB-Lee-RFAdataset
 
 Trip cost model - to be built on Github instead of PDF format 
 
+Quota change model - https://github.com/GArdini1/READ-SSB-Quota_Change_Model
+
+Port Indicators - 
