@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Getting started | SSB Metrics Catalog</title>
+  <title>Chapter 12 Quota Change Model | SSB Metrics Catalog</title>
   <meta name="description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Getting started | SSB Metrics Catalog" />
+  <meta property="og:title" content="Chapter 12 Quota Change Model | SSB Metrics Catalog" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Getting started | SSB Metrics Catalog" />
+  <meta name="twitter:title" content="Chapter 12 Quota Change Model | SSB Metrics Catalog" />
   
   <meta name="twitter:description" content="This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="ssb-metrics-index-table.html"/>
+<link rel="prev" href="port-commercial-fishing-activity-indicators.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -311,23 +311,91 @@ float: center margin-bottom: 100px margin-left:100px"/>
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="getting-started" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Getting started<a href="getting-started.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="using-the-ssb-metrics-index-table" class="section level3 hasAnchor" number="2.0.1">
-<h3><span class="header-section-number">2.0.1</span> Using the “SSB Metrics Index Table”<a href="getting-started.html#using-the-ssb-metrics-index-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The “SSB Metrics Index Table” describes a full table of SSB-generated metrics, their level of stratification and time series as well as which product is associated with the metric. Once identifying the metric of interest, you can navigate to the appropriate chapter which describes the methods for creating the metric.</p>
+<div id="quota-change-model" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Quota Change Model<a href="quota-change-model.html#quota-change-model" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="product-overview-8" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Product Overview<a href="quota-change-model.html#product-overview-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Quota Change Model (QCM) has been used to analyze the impacts of quota setting in the sector component of the Northeast multispecies (groundfish) fishery since comprehensive sector management was implemented for the 2010 fishing year.
+The QCM is a Monte Carlo simulation that draws from recent fishing activity to predict performance in the upcoming fishing year.
+To form a synthetic fishing year, trips are selected based on relative quota efficiency. The more operating profit that can be extracted from the trip, subject to quota constraints, the higher the probability of selection.
+Trips with negative operating profit will always have a low probability of selection.
+Trips with positive operating profit have their probability of selection influenced by whether or not they use a large amount of quota for a particular stock.
+Trips are selected until all broadstock areas (BSAs) are closed due to full utilization of sector sub-ACLs from either a unit stock (e.g white hake) or through a combination of BSA-specific stocks (GOM haddock + GB haddock).
+Outputs from the QCM include groundfish revenue, total revenue from groundfish trips, operating profit, number of groundfish trips, and days-at-sea.
+The outputs are typically presented as median values from a large number (&gt;=250) synthetic fishing years.</p>
+<ul>
+<li>Unit: Sector component of the groundfish fishery</li>
+<li>Summary Group(s): Model predictions conducted for the fishery as a whole and by certain fleet segments such as port and vessel length category.</li>
+<li>Frequency: Model is run each groundfish specifications cycle, with final predictions typically presented at the December NEFMC meeting.</li>
+<li>Time Series: Model predictions relative to realized fishery values available for fishing years 2020-2025.</li>
+</ul>
+<div id="point-of-contact-8" class="section level3 hasAnchor" number="12.1.1">
+<h3><span class="header-section-number">12.1.1</span> Point of Contact<a href="quota-change-model.html#point-of-contact-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Chad Demarest, Greg Ardini</p>
 </div>
-<div id="product-chapters" class="section level3 hasAnchor" number="2.0.2">
-<h3><span class="header-section-number">2.0.2</span> Product Chapters<a href="getting-started.html#product-chapters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>End users can also navigate directly to the product chapter of interest to gain insight on the suite of metrics offered by each individual product.</p>
+<div id="data-outputsoutlets-7" class="section level3 hasAnchor" number="12.1.2">
+<h3><span class="header-section-number">12.1.2</span> Data Outputs/Outlets<a href="quota-change-model.html#data-outputsoutlets-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model.git" class="uri">https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model.git</a></p>
 </div>
-<div id="definitions" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Definitions<a href="getting-started.html#definitions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Level of reporting</em> - Reporting component (e.g., vessel, trip)</p>
-<p><em>Summary Group(s)</em> - Additional stratification of how the unit is grouped, where applicable (e.g., primary FMP)</p>
-<p><em>Frequency</em> - Interval at which data are reported (e.g., Annual, Monthly, quarterly)</p>
-<p><em>Time Series</em> - Data series reported</p>
+</div>
+<div id="list-of-metrics-8" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> List of Metrics<a href="quota-change-model.html#list-of-metrics-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Revenue</li>
+<li>Operating Profit</li>
+<li>Number of Days at Sea</li>
+</ul>
+</div>
+<div id="metric-descriptions-8" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Metric Descriptions<a href="quota-change-model.html#metric-descriptions-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Metric</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Revenue</strong></td>
+<td align="left">Predicted sector groundfish fishery revenue presented as both groundfish FMP revenue and total revenue (groundfish FMP + non-groundfish FMP) from sector trips.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Operating Profit </strong></td>
+<td align="left">Predicted total revenue minus predicted operating costs.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Number of Days at Sea </strong></td>
+<td align="left">Predicted fishing effort for sector groundfish fishery.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="additional-methodsdecision-rules-7" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Additional Methods/Decision Rules<a href="quota-change-model.html#additional-methodsdecision-rules-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="data-sources-and-code-8" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> Data Sources and Code<a href="quota-change-model.html#data-sources-and-code-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-sources-8" class="section level3 hasAnchor" number="12.5.1">
+<h3><span class="header-section-number">12.5.1</span> Data Sources<a href="quota-change-model.html#data-sources-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>CAMS (landings + discards)</li>
+<li>Observer data</li>
+</ul>
+</div>
+<div id="code-8" class="section level3 hasAnchor" number="12.5.2">
+<h3><span class="header-section-number">12.5.2</span> Code<a href="quota-change-model.html#code-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Metric Creation Code File Location: <a href="https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model/" class="uri">https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model/</a>
+Read Me file (file to run code): N/A
+Website Production Code Location: N/A
+Read Me file (file to run code): N/A</p>
+<p>**The latter are for if thre is a different location for a stand alone website</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -335,8 +403,8 @@ float: center margin-bottom: 100px margin-left:100px"/>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ssb-metrics-index-table.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="port-commercial-fishing-activity-indicators.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
