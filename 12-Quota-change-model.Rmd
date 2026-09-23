@@ -1,14 +1,15 @@
+
 # Quota Change Model
 
 ## Product Overview
 
 The Quota Change Model (QCM) has been used to analyze the impacts of quota setting in the sector component of the Northeast multispecies (groundfish) fishery since comprehensive sector management was implemented for the 2010 fishing year.
 The QCM is a Monte Carlo simulation that draws from recent fishing activity to predict performance in the upcoming fishing year.
-To form a synthetic fishing year, trips are selected based on relative quota efficiency. The more operating profit that can be extracted from the trip, subject to quota constraints, the higher the probability of selection.
-Trips with negative operating profit will always have a low probability of selection.
+To form a synthetic fishing year, trips are selected based on relative quota efficiency. The more operating profit that can be extracted from the trip, subject to quota constraints, the higher the probability of selection. 
+Trips with negative operating profit will always have a low probability of selection. 
 Trips with positive operating profit have their probability of selection influenced by whether or not they use a large amount of quota for a particular stock.
 Trips are selected until all broadstock areas (BSAs) are closed due to full utilization of sector sub-ACLs from either a unit stock (e.g white hake) or through a combination of BSA-specific stocks (GOM haddock + GB haddock).
-Outputs from the QCM include groundfish revenue, total revenue from groundfish trips, operating profit, number of groundfish trips, and days-at-sea.
+Outputs from the QCM include groundfish revenue, total revenue from groundfish trips, operating profit, number of groundfish trips, and days-at-sea. 
 The outputs are typically presented as median values from a large number (>=250) synthetic fishing years.
 
 * Unit: Sector component of the groundfish fishery
@@ -32,9 +33,9 @@ https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model.git
 
 | **Metric** | **Description** |
   | :--- | :--- |
-  | **Revenue**  | Predicted sector groundfish fishery revenue presented as both groundfish FMP revenue and total revenue (groundfish FMP + non-groundfish FMP) from sector trips. |
-  | **Operating Profit ** | Predicted total revenue minus predicted operating costs. |
-  | **Number of Days at Sea ** | Predicted fishing effort for sector groundfish fishery. |
+  | **Revenue** | Predicted sector groundfish fishery revenue presented as both groundfish FMP revenue and total revenue (groundfish FMP + non-groundfish FMP) from sector trips. |
+  | **Operating Profit** | Predicted total revenue minus predicted operating costs. |
+  | **Number of Days at Sea** | Predicted fishing effort for sector groundfish fishery. |
 
 
 ## Additional Methods/Decision Rules
