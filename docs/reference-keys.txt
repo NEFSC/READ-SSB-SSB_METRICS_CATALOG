@@ -78,6 +78,7 @@ code-3
 regulatory-flexibility-act-rfa-vessel-owner-affiliate-dataset
 product-overview-4
 point-of-contact-4
+data-outputsoutlets-4
 list-of-metrics-4
 metric-descriptions-4
 additional-methodsdecision-rules-4
@@ -92,7 +93,7 @@ code-4
 trip-cost-model-estimates
 product-overview-5
 point-of-contact-5
-data-outputsoutlets-4
+data-outputsoutlets-5
 list-of-metrics-5
 metric-descriptions-5
 additional-methods-and-decision-rules
@@ -116,7 +117,7 @@ code-5
 northeast-input-output-model
 product-overview-6
 point-of-contact-6
-data-outputsoutlets-5
+data-outputsoutlets-6
 list-of-metrics-6
 metric-descriptions-6
 additional-methodsdecision-rules-5
@@ -126,7 +127,7 @@ code-6
 port-commercial-fishing-activity-indicators
 product-overview-7
 point-of-contact-7
-data-outputsoutlets-6
+data-outputsoutlets-7
 list-of-metrics-7
 metric-descriptions-7
 additional-methodsdecision-rules-6
@@ -137,13 +138,10 @@ code-7
 quota-change-model
 product-overview-8
 point-of-contact-8
-data-outputsoutlets-7
+data-outputsoutlets-8
 list-of-metrics-8
 metric-descriptions-8
 additional-methodsdecision-rules-7
 data-sources-and-code-8
 data-sources-8
 code-8
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
-primary-fishery
-primary-gearfishery
