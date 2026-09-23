@@ -15,6 +15,26 @@ Good luck!
 
 
 ***Clone the following repos for the following chapters****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Original sources if you lose your mapped connection 
 * Performance measures - 
 https://github.com/NEFSC/READ-SSB-PM/blob/main/app/Views/home.twig
 https://github.com/NEFSC/READ-SSB-PM/blob/main/app/Views/definitions.twig
