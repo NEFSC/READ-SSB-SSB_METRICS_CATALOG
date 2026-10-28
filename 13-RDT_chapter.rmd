@@ -11,7 +11,7 @@ The Recreational Fisheries Decision Support Tool (DST) provides historical data 
 
 ### Point of Contact
 
-Min-Yang Lee ([Min-yang.lee\@noaa.gov](mailto:Min-yang.lee@noaa.gov){.email})
+([nefsc.recdst\@noaa.gov](mailto:nefsc.recdst@noaa.gov){.email})
 
 ### Data Outputs/Outlets
 
