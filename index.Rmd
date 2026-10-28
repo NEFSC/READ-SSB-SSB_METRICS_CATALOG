@@ -1,5 +1,5 @@
 --- 
-title: "SSB Metrics Catalog"
+title: "Social Sciences Branch Metrics Catalog"
 author: "A product of the SSB Data Working Group"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,7 +8,7 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works.  
+  This a catalog of the metrics, and the methods and code used to generate them, produced by the Social Sciences Branch of the Norhteast Fisheries Science Center. The intent of this document is to increase access, transferability, and reproducibility of SSB-created works.  
   
 link-citations: yes
 github-repo: rstudio/bookdown-demo

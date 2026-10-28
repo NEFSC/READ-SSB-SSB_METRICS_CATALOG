@@ -145,3 +145,17 @@ additional-methodsdecision-rules-7
 data-sources-and-code-8
 data-sources-8
 code-8
+recreational-fisheries-dst-dashboard-ne-ma
+product-overview-9
+point-of-contact-9
+data-outputsoutlets-9
+list-of-metrics-9
+metric-descriptions-9
+additional-methodsdecision-rules-8
+numbers-at-age
+trips-and-catch-definitions-statistical-areas
+catch-per-trip-imputation-and-simulation
+catch-at-length-smoothing-and-projections
+data-sources-and-code-9
+data-sources-9
+code-metric-creation

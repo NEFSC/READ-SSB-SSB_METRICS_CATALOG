@@ -1,0 +1,82 @@
+# Recreational Fisheries DST Dashboard (NE &MA)
+
+## Product Overview
+
+The Recreational Fisheries Decision Support Tool (DST) provides historical data and simulated projections for key recreational fish species in the Northeast and Mid-Atlantic regions. It includes data on numbers at age, directed trips, total catch, catch per trip, and catch at length to aid in fishery management and regulatory planning.
+
+-   Unit: Trip, Age Class, Length Bin (inches)
+-   Summary Group(s): Cod (WGOM), Haddock (GOM), Black Sea Bass, Summer Flounder, Scup
+-   Frequency: Annual, Seasonal (Summer: May-August, Winter: September-April), and Mode-Month
+-   Time Series: Varies by metric (Recent historical years and upcoming 1-year projections)
+
+### Point of Contact
+
+Min-Yang Lee ([Min-yang.lee\@noaa.gov](mailto:Min-yang.lee@noaa.gov){.email})
+
+### Data Outputs/Outlets
+
+<https://connect.fisheries.noaa.gov/content/c257deee-a657-4c10-be8a-92827cb5bdfe/>
+
+## List of Metrics
+
+-   Numbers at age
+-   Directed Trips
+-   Catch
+-   Catch Catch per trip
+-   Catch at length
+
+## Metric Descriptions
+
+| Variable Name | Type | Description | Notes |
+|------------------|------------------|------------------|------------------|
+| Numbers at age | Numeric | Historical numbers at age (mean) and simulated future numbers at age for the upcoming regulatory cycle. Includes assessment estimates and bridges to the current regulatory year. | WGOM Cod/GOM Haddock: 9 age classes (1 to 9+). Black Sea Bass: 8 age classes (1 to 8+). Summer Flounder/Scup: 7 age classes (1 to 7+). Future simulations use 500 draws (Cod/Haddock) or 100 draws (Mid-Atlantic). |
+| Directed Trips | Numeric | Historical directed trips where target species were caught or stated as the primary target by the angler from MRIP. | Prevents double-counting of trips targeting multiple species. Represents combined measure of trips for associated species groups. |
+| Catch | Numeric | Harvest (landed + unobserved), discards, and total catch (harvest + discards) in numbers of fish from MRIP. | Catch is species-specific. |
+| Catch per trip | Numeric | Simulated mean catch per trip at the mode-month level. Provides the median, minimum, and maximum of 100 random draws. | Based on most recent 6 waves of catch/effort data. Includes harvest and discards. |
+| Catch at length | Numeric | Proportions of fish caught at length (in inches) by season (Summer: May-Aug, Winter: Sep-Apr). Provides medians of 101 random draws of fitted/smoothed proportions. | Originally in cm, smoothed over cm bins, converted to non-integer inches for users. Includes baseline (calibration year) and projected distributions. |
+
+## Additional Methods/Decision Rules
+
+### Numbers at Age
+
+**WGOM Cod & GOM Haddock:** Derived from the 2024 Management Track stock assessment. Uses WHAM and ASAP3 (for Cod) model files. \* Uses actual catch (in mt) for 2023 and 2024. Uses 75% FMSY for 2025-2026 mortality. \* Projects the stock forward, extracting mean NAA through 2025. \* Simulates 500 draws of Numbers-at-Age for 2026 based on WHAM means and standard deviations.
+
+**Black Sea Bass, Summer Flounder, Scup:** Derived from the 2025 Management Track stock assessment.
+
+-   NAA is obtained straight from the stock assessment projection.
+
+-   100 individual draws are constructed independently for the upcoming regulatory year (for Black Sea Bass, separated into North and South units).
+
+### Trips and Catch Definitions & Statistical Areas
+
+**WGOM Definition:** Trips taken in Maine, Massachusetts, or New Hampshire corresponding to statistical areas 513, 514, 515, 521, and 526.
+
+**GOM Definition (Haddock):** GOM Haddock are assessed in areas 511, 512, 513, 514, and 515. However, the data limits trips/catch to the WGOM area because no Haddock were caught in 511/512 recently, and very few in 521/526.
+
+**Mid-Atlantic Definition:** Captures trips where Summer Flounder, Scup, or Black Sea Bass were caught or primarily targeted (PRIM1, A, B1, B2).
+
+### Catch per Trip Imputation and Simulation
+
+Computes mean and standard error of MRIP harvest, discards, and catch per trip at the mode-month level.
+
+**Imputation Rule:** When standard error is missing for a strata, it is imputed based on recent historical data using a different aggregation level. \* Simulates random draws of harvest/discards per trip (accounting for correlation), feeding into daily catch draw data to simulate total catch. Finally computes the median, min, and max of 100 draws.
+
+### Catch at Length Smoothing and Projections
+
+**Baseline Catch at Length:** Multiplies harvest/discard at length probability distributions by 101 draws of simulated total harvest/discards. The observed probabilities are then fitted to a gamma distribution to obtain smoothed probability distributions.
+
+**Projected Catch at Length:** Computes an empirical selectivity at length by species, season, draw, and length. Baseline numbers at length are converted from stock assessment numbers at age using age-length keys from recent NEFSC trawl surveys. Applies baseline selectivity to projected numbers at length, converts to probabilities, and fits to a gamma distribution.
+
+## Data Sources and Code
+
+### Data sources
+
+**MRIP (Marine Recreational Information Program):** Provides microdata for catch, effort, directed trips, and lengths of harvested/discarded fish (discard lengths from headboat observations). Data extracted using the `mriptacklebox` package created by the Population Dynamics Branch at the NEFSC.
+
+**Stock Assessments:** 2024 Management Track (WGOM Cod, GOM Haddock) and 2025 Management Track (Black Sea Bass, Summer Flounder, Scup).
+
+**NEFSC Trawl Survey Data:** Used for age-length keys.
+
+### Code Metric Creation
+
+Code File Location: Read Me file (file to run code): Website Production Code Location: <https://github.com/NEFSC/READ-SSB-recdashboard>
