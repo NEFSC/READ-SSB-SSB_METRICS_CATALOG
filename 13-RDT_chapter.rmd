@@ -1,5 +1,3 @@
-# Recreational Fisheries DST Dashboard (NE &MA)
-
 # Recreational Fisheries DST Dashboard (NE & MA)
 
 ## Product Overview
@@ -12,8 +10,8 @@ The intention of the Recreational Fisheries DST dashboard is to increase stakeho
 -   Time Series: Varies by metric (Recent historical years and upcoming 1-year projections)
 
 ### Point of Contact
-[nefsc.recdst\@noaa.gov](mailto:nefsc.recdst@noaa.gov){.email}
 
+[nefsc.recdst\@noaa.gov](mailto:nefsc.recdst@noaa.gov){.email}
 
 ### Data Outputs/Outlets
 
@@ -31,9 +29,9 @@ The intention of the Recreational Fisheries DST dashboard is to increase stakeho
 ## Metric Descriptions
 
 | Variable Name | Type | Description | Notes |
-|------------------|------------------|------------------|------------------|
+|----|----|----|----|
 | Numbers at age - Stock Assessment | Numeric | Historical Numbers at age (mean) and projected Numbers at age | WGOM Cod/GOM Haddock: 9 age classes (1 to 9+). Black Sea Bass: 8 age classes (1 to 8+). Summer Flounder/Scup: 7 age classes (1 to 7+). |
-| Directed Trips - MRIP | Numeric | Estimated historical directed trips in a fishery (species were caught or targeted by the angler) . | . |
+| Directed Trips - MRIP | Numeric | Estimated historical directed trips in a fishery (species were caught or targeted by the angler) . |  |
 | Catch - MRIP | Numeric | Harvest (landed + unobserved), discards, and total catch (harvest + discards) in numbers of fish. | Catch is species-specific. |
 | Catch per trip - Model intermediate | Numeric | Simulated catch per trip by fishing mode at model-specific geographic and temporal levels. Provides the median, minimum, and maximum of 101 random draws. | Catch is defined as harvest plus discards. |
 | Catch at length - Model intermediate | Numeric | Proportions of fish caught at length (in inches) by model-specific geographic and temporal levels). Provides medians of 101 random draws of fitted/smoothed proportions. | Includes baseline (calibration year) and projected distributions. |
