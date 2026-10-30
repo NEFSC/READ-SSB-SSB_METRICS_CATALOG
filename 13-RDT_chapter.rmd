@@ -12,8 +12,8 @@ The intention of the Recreational Fisheries DST dashboard is to increase stakeho
 -   Time Series: Varies by metric (Recent historical years and upcoming 1-year projections)
 
 ### Point of Contact
+[nefsc.recdst\@noaa.gov](mailto:nefsc.recdst@noaa.gov){.email}
 
-Min-Yang Lee (nefsc.recdst\@noaa.gov email)
 
 ### Data Outputs/Outlets
 
