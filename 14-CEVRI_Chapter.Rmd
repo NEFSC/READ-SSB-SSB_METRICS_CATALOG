@@ -1,0 +1,139 @@
+# Community Environmental Variability Risk Indicators
+
+## Product Overview
+
+The Community Environmental Vulnerability Risk Indicators (CEVRI) is a
+national framework that assesses how environmental changes impact marine
+life and distribute risks across fishing communities by connecting
+species vulnerability, as calculated by each region’s Climate
+Vulnerability Assessment (CVA)\*, with revenue importance. It evaluates
+these risks using the specific indicators listed below at the community
+and regional levels.
+
+The NOAA CVAs score species based on their exposure to projected changes
+in the environment and their sensitivity or adaptability to handle those
+changes based on their life history characteristics (such as
+reproductive rates and diet). CEVRI scores reflect the relationship
+between the species' vulnerability assessments and their importance for
+a community's revenue.
+
+-   Unit: Community (by species)
+-   Summary Group(s): Regional
+-   Frequency: Updated Annually
+-   Time Series: Annual (2000-2024*)* the time series goes to the most
+    recent year for which the code is run and updated regularly
+
+### Point of Contact
+
+Tarsila Seara
+[tarsila.seara\@noaa.gov](mailto:tarsila.seara@noaa.gov){.email}
+
+Tanya Noteva
+[tanya.noteva\@noaa.gov](mailto:tanya.noteva@noaa.gov){.email}
+
+### Data Outputs/Outlets
+
+TBD
+
+## List of Metrics
+
+Sensitivity to Ocean Acidification Sensitivity to Temperature
+Sensitivity to Stock Size and Status Total Sensitivity Total
+Vulnerability Reciprocal Simpson’s Diversity Index (Value) Percent
+Contributions of Species (Value)
+
+## Metric Descriptions
+
+| Variable Name | Type | Description | Notes |
+|------------------|------------------|------------------|------------------|
+| Sensitivity to Ocean Acidification | NUMBER | Sensitivity to Ocean Acidification. Calculated as the sum of percent contributions by species multiplied by their respective Sensitivity to Ocean Acidification CVA score. | Total value calculation includes only species that have been scored by the region's CVA process. This allows the sum of percentages to be 100% and final scores to range between 1 and 4. |
+| Sensitivity to Temperature | NUMBER | Sensitivity to Temperature. Calculated as the sum of percent contributions by species multiplied by their respective Sensitivity to Temperature CVA score. | Total value calculation includes only species that have been scored by the region's CVA process. This allows the sum of percentages to be 100% and final scores to range between 1 and 4. |
+| Sensitivity to Stock Size and Status | NUMBER | Sensitivity to Stock Size/Status. Calculated as the sum of percent contributions by species multiplied by their respective Sensitivity to Stock Size and Status CVA score. | Total value calculation includes only species that have been scored by the region's CVA process. This allows the sum of percentages to be 100% and final scores to range between 1 and 4. |
+| Total Sensitivity | NUMBER | Total Sensitivity. Calculated as the sum of percent contributions by species multiplied by their respective Total Sensitivity CVA score. | Total value calculation includes only species that have been scored by the region's CVA process. This allows the sum of percentages to be 100% and final scores to range between 1 and 4. |
+| Total Vulnerability | NUMBER | Total Vulnerability. Calculated as the sum of percent contributions by species multiplied by their respective Total Vulnerability CVA score. | Total value calculation includes only species that have been scored by the region's CVA process. This allows the sum of percentages to be 100% and final scores to range between 1 and 4. |
+| Reciprocal Simpson’s Diversity Index (Value) | NUMBER | Simpson's Reciprocal Diversity Index score for species contributions to value landed | Total value calculation includes all species landed in a given community or region. Thus diversity scores reflect landings of both species that were included in the CVA and those that were not. |
+| Percent Contributions of Species (Value) | NUMBER | The percent contribution of each species landed to the total landed value | Total value calculation includes all species landed in a given community or region. |
+
+## Additional Methods/Decision Rules
+
+## Subregion Characterization
+
+Subregions were used to align data to management units where
+appropriate. Regions are split as follows: Northeast: New England and
+Mid-Atlantic Southeast\*: South Atlantic, Gulf of America, and Florida
+Keys U.S. Caribbean: Puerto Rico, St. Thomas/St. John, and St. Croix
+Pacific Islands: Hawai’i, American Samoa (no data), Guam (no data),
+Northern Mariana Islands (no data), other U.S. Pacific Islands (no data)
+
+\*Florida communities not located in the Keys were split between the
+South Atlantic and Gulf subregions by drawing an imaginary line
+splitting the state equally in two and attributing communities to either
+side.
+
+## Community Characterization
+
+Communities are operationalized differently for different regions and
+subregions depending on data availability and structure: Northeast:
+Communities represent the ports of landing as reported by dealers.
+Southeast: Communities are defined by linking reported landings to
+dealer addresses by dealer identification number. Hawai’i: Landings are
+associated with the Census county division for which they were reported.
+Puerto Rico: Landings are attributed to the municipality for which they
+were reported. USVI: Landings are reported by submunicipality but they
+were aggregated by island/island group.
+
+## Treatment of Landings and Species data
+
+### Puget Sound Rockfish Species
+
+Species of rockfish endemic to Puget Sound were scored by the CVA effort
+differently from those occurring elsewhere in the region. Therefore, for
+any communities adjacent to the Sound, the calculations use the Puget
+Sound scores for all rockfish species classified.
+
+### AK vessels landing in the West Coast
+
+Historically, vessels from Alaska, fishing in AK waters, land a
+significant portion of their catch in the West Coast, particularly
+Seattle. CEVRI calculations for the West Coast include landings from
+these AK vessels and apply West Coast species CVA scores due to lack of
+AK specific CVAs to date.
+
+### Puerto Rico Landings Correction Factor
+
+Landings for Puerto Rico used the corrected values that are estimated by
+the SEFSC due to perceived underreporting. The correction factor is
+calculated by coast, i.e. the North, East, South and West where port
+samplers intercept some of the trips throughout Puerto Rico and estimate
+the amount of underreporting. Additionally, for the last 5 years due to
+a variety of reasons (e.g., Covid), 2020-2024 landings use the average
+correction factors by coast for 2014-2019. The CEVRI calculations use
+the corrected values to maintain consistency with other documentation
+and analyses conducted in the region.
+
+## Data Sources and Code
+
+### Data Sources
+
+**Northeast** - CEVRI (currently in development on oradev),
+CAMS_GARFO.CAMS_LAND and other CAMS helper tables;
+CAMS_GARFO.CFDRS_AVG_PRICE_TST - used to impute state revenue PM.
+PERFORMANCE_MEASURES.PM_PORT_CORRECTIONS
+PERFORMANCE_MEASURES.PM_PORT_TRANSFORMATIONS **Southeast** - CEVRI
+(currently in development on oradev),
+[fci.V_FSH_COMM_DATA\@SECAPXDV](mailto:fci.V_FSH_COMM_DATA@SECAPXDV){.email}\_DBLK.SFSC.NOAA.GOV
+**West Coast** - CEVRI (currently in development on oradev); PACfin;
+Landings data provided by Connor Lewis-Smith - NOAA Federal
+**Caribbean** - CEVRI (currently in development on oradev); Landings
+data provided by Kevin McCarthy - NOAA Federal **Hawaii** - CEVRI
+(currently in development on oradev); Landings data provided by Justin
+Hospital
+
+### Code
+
+Metric Creation Code File Location:
+<https://github.com/TNoteva/READ-SSB-CEVRI-CORE> (in development) Read
+Me file (file to run code):
+<https://github.com/TNoteva/READ-SSB-CEVRI-CORE> (in development)
+Website Production Code Location: OST Read Me file (file to run code):
+OST
