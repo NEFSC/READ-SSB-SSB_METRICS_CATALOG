@@ -5,7 +5,7 @@
 The intention of the Recreational Fisheries DST dashboard is to increase stakeholder understanding of the data used in the Recreational Fisheries Decision Support Tool (RecDST). The dashboard contains tables and visualizations of historical data and intermediate model data. The dashboard does not contain every recreational fishing metric. It focuses on the metrics most relevant to understanding the RecDST. It currently contains historical data from MRIP for recreational trips and catch, data from stock assessments including historical and projected numbers at age, and intermediate model inputs including catch per trip, catch at length, and directed trips for five stocks across two fisheries. .
 
 -   Unit: Trips, Number of Fish
--   Summary Group(s): Disclaimer: Varies by indicator– Cod (WGOM), Haddock (GOM), GOM cod or WGOM haddock, Black Sea Bass, Summer Flounder, Scup, Fishing Mode,State
+-   Summary Group(s): Varies by metric– Cod (WGOM), Haddock (GOM), GOM cod or WGOM haddock, Black Sea Bass, Summer Flounder, Scup, Fishing Mode, State
 -   Frequency: Annual, Seasonal (Summer: May-August, Winter: September-April), and Month
 -   Time Series: Varies by metric (Recent historical years and upcoming 1-year projections)
 
@@ -31,23 +31,23 @@ The intention of the Recreational Fisheries DST dashboard is to increase stakeho
 | Variable Name | Type | Description | Notes |
 |----|----|----|----|
 | Numbers at age - Stock Assessment | Numeric | Historical Numbers at age (mean) and projected Numbers at age | WGOM Cod/GOM Haddock: 9 age classes (1 to 9+). Black Sea Bass: 8 age classes (1 to 8+). Summer Flounder/Scup: 7 age classes (1 to 7+). |
-| Directed Trips - MRIP | Numeric | Estimated historical directed trips in a fishery (species were caught or targeted by the angler) . |  |
+| Directed Trips - MRIP | Numeric | Estimated historical directed trips in a fishery (species were caught or targeted by the angler). |  |
 | Catch - MRIP | Numeric | Harvest (landed + unobserved), discards, and total catch (harvest + discards) in numbers of fish. | Catch is species-specific. |
-| Catch per trip - Model intermediate | Numeric | Simulated catch per trip by fishing mode at model-specific geographic and temporal levels. Provides the median, minimum, and maximum of 101 random draws. | Catch is defined as harvest plus discards. |
-| Catch at length - Model intermediate | Numeric | Proportions of fish caught at length (in inches) by model-specific geographic and temporal levels). Provides medians of 101 random draws of fitted/smoothed proportions. | Includes baseline (calibration year) and projected distributions. |
-| Directed trips - Model intermediate | Numeric | Simulated number of directed trips by mode and model-specific geographic and temporal levels. Provides medians of 101 random draws. | Represents combined measure of trips for associated species groups. |
+| Catch per trip - Model intermediate | Numeric | Simulated catch per trip by fishing mode at model-specific geographic and temporal levels. Provides the median, minimum, and maximum of random draws. | Catch is defined as harvest plus discards. |
+| Catch at length - Model intermediate | Numeric | Proportions of fish caught at length (in inches) by model-specific geographic and temporal levels). Provides medians of random draws of fitted/smoothed proportions. | Includes baseline (calibration year) and projected distributions. |
+| Directed trips - Model intermediate | Numeric | Simulated number of directed trips by mode and model-specific geographic and temporal levels. Provides medians of random draws. | Represents combined measure of trips for associated species groups. |
 
 ## Additional Methods/Decision Rules
 
-The methods used for each metric vary by species and are continually changing. Please refer to the full documentation here[<https://connect.fisheries.noaa.gov/content/c257deee-a657-4c10-be8a-92827cb5bdfe/>] for the most up to date information on the calculation and nuances of the metric and underlying data.
+The methods used for each metric vary by species. Please refer to the full documentation here[<https://connect.fisheries.noaa.gov/content/c257deee-a657-4c10-be8a-92827cb5bdfe/>] for the most up to date information.
 
 ## Data Sources and Code
 
 ### Data sources
 
-**MRIP (Marine Recreational Information Program):** Provides microdata for catch, effort, directed trips, and lengths of harvested/discarded fish (discard lengths from headboat observations). Data extracted using the `mriptacklebox` package created by the Population Dynamics Branch at the NEFSC.
+**MRIP (Marine Recreational Information Program):** Provides microdata for catch, effort, directed trips, and lengths of harvested/discarded fish (discard lengths from headboat observations).
 
-**Stock Assessments:** see dashboard site for more details.
+**Stock Assessments:** See the reference pages of the data dashboard for more detailed information.
 
 **NEFSC Trawl Survey Data:** Used for age-length keys.
 
