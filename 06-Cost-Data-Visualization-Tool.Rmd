@@ -119,7 +119,7 @@ All data are presented as an annual cost for the year in which the data were col
 
 ### Data Sources 
 * Cost data- SSB_COST_SURVEY.VCS_COMMON_VARIABLES_MV 
-* Metadata: https://swerner2.github.io/ORACLE_COST_SURVEY_METADATA/
+* Metadata: https://nefsc.github.io/READ-SSB-ORACLE_COST_SURVEY_METADATA/
 * Number of Crew- Permit
 * Revenue - CFDERS
 

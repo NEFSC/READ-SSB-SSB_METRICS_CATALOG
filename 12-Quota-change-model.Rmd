@@ -47,7 +47,7 @@ https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model.git
 - Observer data
 
 ### Code
-Metric Creation Code File Location: https://github.com/Ardini-NOAA/READ-SSB-Quota_Change_Model/
+Metric Creation Code File Location: 
 Read Me file (file to run code): N/A
 Website Production Code Location: N/A
 Read Me file (file to run code): N/A
