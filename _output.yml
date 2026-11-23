@@ -1,8 +1,11 @@
+
 bookdown::gitbook:
   includes:
     in_header: header.html
+    after_body: footer.html
   css: style.css
   config:
+    search: no
     toc:
       before: |
         <li><a href="./">SSB METRICS CATALOG</a></li>
