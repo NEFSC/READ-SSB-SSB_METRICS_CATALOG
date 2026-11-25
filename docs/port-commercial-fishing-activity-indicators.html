@@ -23,7 +23,7 @@
 <meta name="author" content="A product of the SSB Data Working Group" />
 
 
-<meta name="date" content="2026-11-23" />
+<meta name="date" content="2026-11-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -352,12 +352,12 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <h1><span class="header-section-number">Chapter 11</span> Port Commercial Fishing Activity Indicators<a href="port-commercial-fishing-activity-indicators.html#port-commercial-fishing-activity-indicators" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="product-overview-7" class="section level2 hasAnchor" number="11.1">
 <h2><span class="header-section-number">11.1</span> Product Overview:<a href="port-commercial-fishing-activity-indicators.html#product-overview-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>** The Port Commercial Fishing Activity (PCFA) Indicators are a suites of indicators used to understand relative participation rates of commercial fishing ports over time. They are composed of commercial fishing landings and permit data from 2000 through 2024 summarized to indicate port-level activity in commercial fishing.*</p>
+<p>The Port Commercial Fishing Activity (PCFA) Indicators are a suites of indicators used to understand relative participation rates of commercial fishing ports over time. They are composed of commercial fishing landings and permit data from 2000 through 2024 summarized to indicate port-level activity in commercial fishing.</p>
 <ul>
-<li><p>Unit: port-level information</p></li>
-<li><p>Summary Group(s): port, year</p></li>
-<li><p>Frequency: annual</p></li>
-<li><p>Time Series: 2000-2024</p></li>
+<li>Unit: port-level information</li>
+<li>Summary Group(s): port, year</li>
+<li>Frequency: annual</li>
+<li>Time Series: 2000-2025</li>
 </ul>
 <div id="point-of-contact-7" class="section level3 hasAnchor" number="11.1.1">
 <h3><span class="header-section-number">11.1.1</span> Point of Contact<a href="port-commercial-fishing-activity-indicators.html#point-of-contact-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -371,10 +371,10 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <div id="list-of-metrics-7" class="section level2 hasAnchor" number="11.2">
 <h2><span class="header-section-number">11.2</span> List of Metrics<a href="port-commercial-fishing-activity-indicators.html#list-of-metrics-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><p>Port Overall Activity score (port_overall_score)</p></li>
-<li><p>Port Transaction Activity score (port_transaction_score)</p></li>
-<li><p>Port Volume Activity score (port_volume_score)</p></li>
-<li><p>Port Permit Activity score (port_permit_score)</p></li>
+<li>Port Overall Activity score (port_overall_score)</li>
+<li>Port Transaction Activity score (port_transaction_score)</li>
+<li>Port Volume Activity score (port_volume_score)</li>
+<li>Port Permit Activity score (port_permit_score)</li>
 </ul>
 </div>
 <div id="metric-descriptions-7" class="section level2 hasAnchor" number="11.3">
@@ -388,60 +388,60 @@ float: center margin-bottom: 100px margin-left:100px"/>
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Column Name</th>
-<th align="left">Data Type</th>
-<th align="left">Description</th>
-<th align="left">Default / Missing</th>
+<th>Column Name</th>
+<th>Data Type</th>
+<th>Description</th>
+<th>Default / Missing</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>PORT_NAME</strong></td>
-<td align="left">character</td>
-<td align="left">Port associated with permit or landing on record.</td>
-<td align="left">N/A</td>
+<td><strong>PORT_NAME</strong></td>
+<td>character</td>
+<td>Port associated with permit or landing on record.</td>
+<td>N/A</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>STATE_ABB</strong></td>
-<td align="left">character</td>
-<td align="left">State associated with permit or landing on record.</td>
-<td align="left">N/A</td>
+<td><strong>STATE_ABB</strong></td>
+<td>character</td>
+<td>State associated with permit or landing on record.</td>
+<td>N/A</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>place_id</strong></td>
-<td align="left">character</td>
-<td align="left">A combined text string with port and state associated with the permit or landing on record.</td>
-<td align="left">N/A</td>
+<td><strong>place_id</strong></td>
+<td>character</td>
+<td>A combined text string with port and state associated with the permit or landing on record.</td>
+<td>N/A</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>year</strong></td>
-<td align="left">character</td>
-<td align="left">Year (2000-2024) associated with the record.</td>
-<td align="left">N/A</td>
+<td><strong>year</strong></td>
+<td>character</td>
+<td>Year (2000-2024) associated with the record.</td>
+<td>N/A</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>port_overall_score</strong></td>
-<td align="left">numeric</td>
-<td align="left">The Port Overall Activity score is a relative metric that reflects the overall activity of a port in the commercial fishing industry. It includes the number of dealers buying fish, the number of vessels selling fish, total pounds and value of fish landed, and the number of dealer and commercial permits registered in that location. Each variable is normalized using a min-max scaling approach (between 0 and 1), and an overall mean is calculated for each port and year combination.</td>
-<td align="left">NA</td>
+<td><strong>port_overall_score</strong></td>
+<td>numeric</td>
+<td>The Port Overall Activity score is a relative metric that reflects the overall activity of a port in the commercial fishing industry. It includes the number of dealers buying fish, the number of vessels selling fish, total pounds and value of fish landed, and the number of dealer and commercial permits registered in that location. Each variable is normalized using a min-max scaling approach (between 0 and 1), and an overall mean is calculated for each port and year combination.</td>
+<td>NA</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>port_transaction_score</strong></td>
-<td align="left">numeric</td>
-<td align="left">The Port Transaction Activity score is a relative metric that reflects the magnitude of fish sale transactions in each port from the perspective of dealers and commercial fishermen.</td>
-<td align="left">NA</td>
+<td><strong>port_transaction_score</strong></td>
+<td>numeric</td>
+<td>The Port Transaction Activity score is a relative metric that reflects the number of dealers buying fish and fishermen selling fish in each port</td>
+<td>NA</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>port_volume_score</strong></td>
-<td align="left">numeric</td>
-<td align="left">The Port Volume Activity score is a relative metric that reflects the physical volume of landings in each port. <em>(Note: Fixed text duplication from transaction score)</em></td>
-<td align="left">NA</td>
+<td><strong>port_volume_score</strong></td>
+<td>numeric</td>
+<td>The Port Volume Activity score is a relative metric that reflects the physical volume of landings in each port. <em>(Note: Fixed text duplication from transaction score)</em></td>
+<td>NA</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>port_permit_score</strong></td>
-<td align="left">numeric</td>
-<td align="left">The Port Permit Activity score is a relative metric that reflects the number of dealer permits and commercial fishing permits registered in each port.</td>
-<td align="left">NA</td>
+<td><strong>port_permit_score</strong></td>
+<td>numeric</td>
+<td>The Port Permit Activity score is a relative metric that reflects the number of dealer permits and commercial fishing permits registered in each port.</td>
+<td>NA</td>
 </tr>
 </tbody>
 </table>
@@ -450,7 +450,7 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <h2><span class="header-section-number">11.4</span> Additional Methods/Decision Rules<a href="port-commercial-fishing-activity-indicators.html#additional-methodsdecision-rules-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="pcfa-creation" class="section level3 hasAnchor" number="11.4.1">
 <h3><span class="header-section-number">11.4.1</span> PCFA Creation<a href="port-commercial-fishing-activity-indicators.html#pcfa-creation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The PCFA indicator provides a relative metric of the activity of a specific port in commercial fishing and utilizes the following data; number of dealers buying fish, the number of vessels selling fish, total pounds and value of fish landed, and the number of dealer and commercial permits registered in that location. Each column of data is normalized (across all years) using a min-max scaling approach (range = 0 – 1) and then we take the mean of each column to create a composite average score for each port by year. Note, the value of landed fish data is first adjusted using a GDP deflator to account for inflation over time (i.e., all values are adjusted to 2024 dollars). The PCFA analysis is conducted for each region (MA and NE) separately such that scores are comparable within-region only</p>
+<p>The PCFA indicator provides a relative metric of the activity of a specific port in commercial fishing and utilizes the following data; number of dealers buying fish, the number of vessels selling fish, total pounds and value of fish landed, and the number of dealer and commercial permits registered in that location. Each column of data is normalized (across all years) using a min-max scaling approach (range = 0 – 1) and then we take the mean of each column to create a composite average score for each port by year. Note, the value of landed fish data is first adjusted using a GDP deflator to account for inflation over time (i.e., all values are adjusted to 2025 dollars). The PCFA analysis is conducted on data across the Greater Atlantic Region (Mid-Atlantic and New England states) such that scores are comparable within and between these states.</p>
 </div>
 </div>
 <div id="data-sources-and-code-7" class="section level2 hasAnchor" number="11.5">
@@ -458,12 +458,12 @@ float: center margin-bottom: 100px margin-left:100px"/>
 <div id="data-sources-7" class="section level3 hasAnchor" number="11.5.1">
 <h3><span class="header-section-number">11.5.1</span> Data Sources<a href="port-commercial-fishing-activity-indicators.html#data-sources-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>CAMS_GARFO.CFG_PORT, CAMS_GARFO.CAMS_LAND, CAMS_GARFO.CFG_ITIS, NEFSC_GARFO.permit_dealer, PERFORMANCE_MEASURES.PM_PORT_CORRECTIONS, PERFORMANCE_MEASURES.PM_PORT_TRANSFORMATIONS, NEFSC_GARFO.permit_vps_fishery_ner, NEFSC_GARFO.permit_vps_vessel, ACCSP mvlandings</li>
+<li>CAMS_GARFO.CFG_PORT, CAMS_GARFO.CAMS_LAND, CAMS_GARFO.CFG_ITIS, NEFSC_GARFO.permit_dealer, PERFORMANCE_MEASURES.PM_PORT_CORRECTIONS, PERFORMANCE_MEASURES.PM_PORT_TRANSFORMATIONS, NEFSC_GARFO.permit_vps_fishery_ner, NEFSC_GARFO.permit_vps_vessel, NEFSC_GARFO.CFDRS_AVG_PRICE_TST</li>
 </ul>
 </div>
 <div id="code-7" class="section level3 hasAnchor" number="11.5.2">
 <h3><span class="header-section-number">11.5.2</span> Code<a href="port-commercial-fishing-activity-indicators.html#code-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Metric Creation Code File Location: <a href="https://github.com/NEFSC/READ\_SSB\_Port\_Activity\_Indicators" class="uri">https://github.com/NEFSC/READ\_SSB\_Port\_Activity\_Indicators</a></p>
+<p>Metric Creation Code File Location: <a href="https://github.com/NEFSC/READ_SSB_Port_Activity_Indicators" class="uri">https://github.com/NEFSC/READ_SSB_Port_Activity_Indicators</a></p>
 
 </div>
 </div>
