@@ -17,7 +17,7 @@
 
 
 ### Data Outputs/Outlets
-[If the a tool, use the website, if no outward facing tool put N/A or state where it is currently used]
+[If this is a tool, use the website, if no outward facing tool put N/A or state where it is currently used]
 
 ## List of Metrics
 [ List of individual variables summarized in the tool or website]
